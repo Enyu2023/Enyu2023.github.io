@@ -1,4 +1,4 @@
-# WhatATheme
+t# WhatATheme
 markdown: kramdown
 
 # URL of the Site
@@ -23,15 +23,17 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 # If you don't want to use any icon, you can leave them blank.
 email: lienyu2001@outlook.com
 facebook_username: 
-
-instagram_username: /
-linkedin_username: /
+twitter_username:
+instagram_username: 
+linkedin_username: 
 github_username:  Enyu2023
 youtube_channel_id: 
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+reddit_username: 
+behance_username: 
+dribbble_username: 
+spotify_username: 
+
+
 
 # Google Analytics
 google-analytics: UA-163806439-1

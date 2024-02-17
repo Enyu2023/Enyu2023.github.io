@@ -4,8 +4,7 @@ markdown: kramdown
 # URL of the Site
 url: 'https://Enyu2023.github.io'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: https://github.com/Enyu2023/Enyu2023.github.io/tree/main
-
+baseurl: 
 # Title of the Site
 title: What A Theme
 # Description of the Site

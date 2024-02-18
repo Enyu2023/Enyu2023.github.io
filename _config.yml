@@ -1,5 +1,5 @@
 # WhatATheme
-markdown: kramdown
+markdown: GFM
 
 # URL of the Site
 url: ''

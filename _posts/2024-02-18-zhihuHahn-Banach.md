@@ -1,4 +1,15 @@
+---
+title: test
+layout: post
+post-image: Euler.jpg
+description: This just test
+tags:
+- sample
+- post
+- test
+---
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Hahn-Banach定理
 我们知道Hahn-Banach定理是一族延拓定理，它最初有一个纯代数的形式，在赋范线性空间上有一个保范数的形式. 
@@ -7,7 +18,7 @@ Banach的经典证明是从子空间 $Y$ 出发, 一步步把 $Y$ 张成 $X$；�
 
 考虑带偏序关系的集合:
 $$\Phi=\left\{q:q \text{ sublinear},q\leq p, q|_Y=l\right\}$$
-由对任意线性序集：$\{q_j\}$, $\inf q_j\in\Phi$ 是一个下界, $\Phi$中有极小元$f$, 令
+由对任意线性序集：$\{q_j\}$, $\inf q_j\in\Phi$ 是一个下界, $\Phi$ 中有极小元 $f$, 令
 $$q_zx:=\inf_{t\geq 0}\{f(x+tz)-tfz\}$$
 则对$y\in Y$, $q_y\in \Phi$, 由极小性 $q_y=f$, 即 $f(x+y)-fy=fx$. 从而任意$z\in X$, $q_z\in\Phi$, 再由极小性 $f(x+z)-fz=fx$, #. 
 

@@ -5,6 +5,7 @@ markdown: kramdown
 url: 'https://Enyu2023.github.io'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
+
 # Title of the Site
 title: SHOOTING FOR STARS
 # Description of the Site
@@ -32,8 +33,6 @@ reddit_username: /
 behance_username: /
 dribbble_username: /
 spotify_username: /
-
-
 
 # Google Analytics
 google-analytics: UA-163806439-1

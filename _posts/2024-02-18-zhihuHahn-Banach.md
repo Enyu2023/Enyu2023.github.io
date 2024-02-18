@@ -9,7 +9,7 @@ tags:
 - test
 ---
 
-
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 # Hahn-Banach定理
 我们知道Hahn-Banach定理是一族延拓定理，它最初有一个纯代数的形式，在赋范线性空间上有一个保范数的形式. 

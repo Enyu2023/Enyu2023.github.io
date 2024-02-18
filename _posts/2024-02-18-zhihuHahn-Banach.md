@@ -1,15 +1,4 @@
----
-title: test
-layout: post
-post-image: Euler.jpg
-description: This just test
-tags:
-- sample
-- post
-- test
----
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Hahn-Banach定理
 我们知道Hahn-Banach定理是一族延拓定理，它最初有一个纯代数的形式，在赋范线性空间上有一个保范数的形式. 

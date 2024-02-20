@@ -10,7 +10,7 @@
             {% endunless %}
             {% unless site.email == %}
             <a id="contact-button" href="mailto:{{site.email}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                class="button is-rounded is-uppercase has-text-weight-normal is-link is-outlined has-text-weight-semibold column is-two-fifths"
                 target="_blank">
                 <i class="fas fa-envelope"></i>Send me an Email
             </a>
@@ -61,7 +61,8 @@
                 <a href="http://zhihu.com/people/{{site.zhihu_username}}" target="_blank" class="has-text-blue"><i class="fab fa-zhihu"></i></a>
                 {% endunless %}
             
-                <a href="../assets/images/qrcode.jpg"  target="_blank" class="has-text-yellow"><i class="fab fa-weixin"></i></a>
+                <a href="../assets/images/qrcode.jpg"  target="_blank" class="has-text-success"><i class="fab fa-weixin"></i></a>
+                
             
             </div>
         </div>

@@ -1,12 +1,11 @@
 ---
 title: test
 layout: post
-post-image: Euler.jpg
+post-image: /assets/images/me.jpg
 description: This just test
-tags:
-- sample
-- post
-- test
+tags: 
+- math
+categories: Math
 ---
 
 
@@ -26,4 +25,4 @@ $$q_zx:=\inf_{t\geq 0}\{f(x+tz)-tfz\}$$
 
 ## Geometric Form
 
-第一个是著名的Mazur's theorem: 
+第一个是著名的Mazur's theorem: hello

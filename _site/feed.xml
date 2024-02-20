@@ -1,8 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-20T13:47:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ley Space</title><subtitle>Welcome To My Homepage!</subtitle><entry><title type="html">What is a finite type invariants?</title><link href="http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants" rel="alternate" type="text/html" title="What is a finite type invariants?" /><published>2024-02-19T00:00:00+08:00</published><updated>2024-02-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants</id><content type="html" xml:base="http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants"><![CDATA[<h1 id="introduction">Introduction</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-20T17:53:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Ley Space</title><subtitle>Welcome To My Homepage!</subtitle><entry><title type="html">A Clever Proof of Sylow Theorems</title><link href="http://localhost:4000/blog/math/A-Clever-Proof-of-Sylow-Theoems" rel="alternate" type="text/html" title="A Clever Proof of Sylow Theorems" /><published>2024-02-20T00:00:00+08:00</published><updated>2024-02-20T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/A-Clever-Proof-of-Sylow-Theoems</id><content type="html" xml:base="http://localhost:4000/blog/math/A-Clever-Proof-of-Sylow-Theoems"><![CDATA[<h1 id="introduction">Introduction</h1>
+
+<p>One of the fundamental theorem in group theory is Lagrange’s theorem: the order of a subgroup of a finite group $G$ must divide $ |G| $. A natural question is,</p>
+
+<blockquote>
+  <p>conversely, if $m$ divides $|G|$, do we have a subgroup of order $m$?</p>
+</blockquote>
+
+<p>Sylow’s theorem is a partial answer to this question.</p>
+
+<blockquote>
+  <p>Sylow’s first thoerem states that if $p^a$ divides $|G|$, then $G$ always has a subgroup of order $p^a$.</p>
+</blockquote>
+
+<p>And</p>
+
+<p>There are many ways to proof this theorem. For</p>]]></content><author><name></name></author><category term="Math" /><category term="algebra" /><category term="group theory" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">What is a finite type invariant?</title><link href="http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants" rel="alternate" type="text/html" title="What is a finite type invariant?" /><published>2024-02-19T00:00:00+08:00</published><updated>2024-02-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants</id><content type="html" xml:base="http://localhost:4000/blog/math/What-Is-Finite-Type-Invariants"><![CDATA[<h1 id="introduction">Introduction</h1>
 
 <p>In some sense, finite type invariants are “polynomials” over the linear span of all knots. One way to define a polynomial of degree $n$ over a field $\mathbb R$ is to say its $n$-th derivative identically vanishes, and if we are working with something not so “continous”, we need to generalize our concept of derivatives. For example, over $\mathbb Z$ this just becomes difference, namely if we have a sequence $a_n$, then it’s first derivative is just $b_n=a_n-a_{n+1}$. What about over  $\mathbb R^k$? Then we must develop the idea of “partial derivatives”, namely if $f(x_1,\cdots, x_k)$ is a multivariable function, then we say it’s a polynomial if all its $n$-th partial derivatives vanish.</p>
 
-<p>Now we want to generalize this notation to something much more complicated: the space spaned by all knots $\mathcal K$. How to define derivatives over this messy space? Well, algebraicly we are looking for an operater on $\mathcal K^*$ so that it satisfies Leibniz rule. But this way we have to decide</p>]]></content><author><name></name></author><category term="Math" /><category term="topology" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">test</title><link href="http://localhost:4000/blog/math/zhihuHahn-Banach" rel="alternate" type="text/html" title="test" /><published>2024-02-18T00:00:00+08:00</published><updated>2024-02-18T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihuHahn-Banach</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihuHahn-Banach"><![CDATA[<h1 id="hahn-banach定理">Hahn-Banach定理</h1>
+<p>Now we want to generalize this notation to something much more complicated: the space spaned by all knots $\mathcal K$. How to define derivatives over this messy space? We first need to figure out what is</p>
+
+<p>Well, there is yet another way to define a derivative: algebraicly we are looking for an operater on $\mathcal K^*$ so that it satisfies Leibniz rule.</p>]]></content><author><name></name></author><category term="Math" /><category term="topology" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">test</title><link href="http://localhost:4000/blog/math/zhihuHahn-Banach" rel="alternate" type="text/html" title="test" /><published>2024-02-18T00:00:00+08:00</published><updated>2024-02-18T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihuHahn-Banach</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihuHahn-Banach"><![CDATA[<h1 id="hahn-banach定理">Hahn-Banach定理</h1>
 <p>我们知道Hahn-Banach定理是一族延拓定理，它最初有一个纯代数的形式，在赋范线性空间上有一个保范数的形式.</p>
 <h2 id="the-shortest-proof">The shortest proof</h2>
 <p>Banach的经典证明是从子空间 $Y$ 出发, 一步步把 $Y$ 张成 $X$；另一个方法则是从控制函数 $p$ 出发，将其降到极小，证明极小元线性.</p>
@@ -17,4 +35,876 @@
 
 <h2 id="geometric-form">Geometric Form</h2>
 
-<p>第一个是著名的Mazur’s theorem: hello</p>]]></content><author><name></name></author><category term="Math" /><category term="math" /><summary type="html"><![CDATA[This just test]]></summary></entry></feed>
+<p>第一个是著名的Mazur’s theorem: hello</p>]]></content><author><name></name></author><category term="Math" /><category term="math" /><summary type="html"><![CDATA[This just test]]></summary></entry><entry><title type="html">调和函数</title><link href="http://localhost:4000/blog/math/zhihu-4" rel="alternate" type="text/html" title="调和函数" /><published>2023-06-28T00:00:00+08:00</published><updated>2023-06-28T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihu-4</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihu-4"><![CDATA[<h1 id="ley的复分析笔记4-调和函数1">Ley的复分析笔记4-调和函数(1)</h1>
+
+<blockquote>
+  <p><strong><em>If this can be called applied mathematics, it’s part of applied mathematics that everyone should know- J. B. Conway</em></strong></p>
+</blockquote>
+
+<p>调和函数的一些问题可以作为复分析理论的一个应用，我们将用两节来介绍它，这一节我们将从之前建立的复分析的角度，整理调和函数的基本性质，并研究圆盘上的调和函数和Dirichlet Problem；在下一节，我们将通过研究下(上)调和函数，解决一般区域上的Dirichlet Problem. 有关$\mathbb R^n$上调和函数的一些基本知识，可参考<a href="">调和函数：A first course</a>.文章的主线参照的是Conway的<em>Functions of one complex variable I(gtm 11)</em> 的第10章，还主要参考了<em>Functions of one complex variable II(gtm159)</em> 的第19章，以及Sheldon Axler等的 <em>Harmonic Function Theory(gtm137)</em> 第1章；</p>
+
+<p>一些约定:
+(1) 区域(Region)是连通开集；
+(2) 把不是常函数(non-constant)的调和/解析函数称为非平凡的；
+(3) 默认解析函数是复分析中的Holomorphic Function， 而实值解析函数单独称为实解析函数。
+(4) 集合$A$在复球面$\mathbb C_{\infty}$上的闭包记为$\bar A_{\infty}$，边界为$\partial_{\infty}A$
+(5) 单位圆盘记作$\mathbb D$</p>
+
+<h2 id="0-introduction">0. Introduction</h2>
+
+<h3 id="01-mathbb-rn上的调和函数">0.1. $\mathbb R^n$上的调和函数</h3>
+
+<p>我们知道，开集$G\subset \mathbb R^n$上的调和函数$u:G\to\mathbb K(\mathbb K=\mathbb R \&amp; \mathbb C)$是指，有着连续二阶偏导数，且满足Laplace’s equation(稳态的热传导方程) 
+\(\Delta u=0\)的函数.</p>
+
+<p>Harmonic这个叫法来源于弦振动和”Harmonic motion”；在经典的调和分析中，常常把三角函数叫做Spherical Harmonics, 到后来，所有满足Laplace方程的函数都被称作调和函数.</p>
+
+<p>Dirichlet Problem 是要解决以下问题：在热传导方程中，若在区域$G$的边界$\partial_{\infty} G$上任意给定连续的温度分布$f$, 能否找到连续的温度分布函数$u:\bar G_{\infty}\to \mathbb C$，使得$u$在$G$上满足稳态的热传导方程；换句话讲，就是要讨论Laplace方程在给定边界条件下的存在性和唯一性。唯一性问题很容易由最大值原理推出，见第1部分定理3。对于存在性，若把Dirichlet Problem可解的区域叫做Dirichlet Region, 我们会在第2段中给出圆就是Dirichlet Region；而在下一节(notes-5)中，将用Perron method 给出一般区域是Drichlet Region 的充要条件。</p>
+
+<h3 id="02-和复解析函数的关系">0.2. 和复解析函数的关系</h3>
+
+<p>$\mathbb R^n-{0}(n&gt;3)$中一类常见的调和函数是: 
+\(u(x)=\frac{1}{|x|^{n-2}}\) 由于Laplacian和 $\partial_k$ 总是可以换序，调和函数的偏导数仍然是调和函数,也就是$x_1|x|^{1-n}$仍然是调和的，注意即使$n=2$时，$x/(x^2+y^2)$也是调和函数, 它可以由对$\log |x|$求导得到，这提示我们，函数$\log|x|$在$\mathbb R^2$中的地位，就如同$|x|^{2-n}$在高维空间的地位；但是，这两种函数是极为不同的：后者是恒正的而前者是无界的；在$\infty$处，后者是趋于0的，前者则发散。</p>
+
+<p>这些讨论隐约给了我们一点启示：$\mathbb R^2$ 中的调和函数理论和高维空间有着很大不同。本文会着重讨论在$\mathbb R^2=\mathbb C$上的<strong>实调和函数</strong>，这时复分析的工具将大有用处。</p>
+
+<p>由C-R方程知，$\mathbb C$ 中的开集上的解析函数的实部和虚部都是调和函数；反之，在<strong>单连通区域</strong>内，调和函数$u$总是有调和共轭 $v$, 使得$u+iv$是解析的；换句话讲，调和函数有<strong>局部</strong>的调和共轭(见notes-3). 而且，其调和共轭在差个常数的意义下是<strong>唯一</strong>的. 由此可见，调和函数和解析函数有密切的联系，它们有着许多相似的性质.</p>
+
+<h3 id="03-不变性">0.3. 不变性</h3>
+
+<blockquote>
+  <p>调和函数复合解析函数仍然是调和函数</p>
+</blockquote>
+
+<h2 id="1-基本性质">1. 基本性质</h2>
+
+<h3 id="11-光滑">1.1. 光滑</h3>
+
+<p>由于调和函数可在局部表为某个解析函数$f$的实部$\text{Re}f$，我们得到:</p>
+
+<blockquote>
+  <p><strong>命题1</strong> 调和函数是 <strong><em>光滑</em></strong> 的(无穷可微).</p>
+</blockquote>
+
+<p>在实分析中，光滑函数每点不一定有幂级数展开，但调和函数一定有幂级数展开(见第2段或<a href="">调和函数：A first course</a>).</p>
+
+<h3 id="12-mvp">1.2. MVP</h3>
+
+<p>由于解析函数有均值性质(MVP)，而单连通区域内的调和函数总是某个解析函数的实部，所以:</p>
+
+<blockquote>
+  <p><strong>定理1(MVP)</strong> $u$是开集$G$上的调和函数，$\bar B(a;r)\subset G$, 则 \(u(a)=\frac1{2\pi}\int_0^{2\pi}u(a+re^{i\theta})\mathrm d \theta\)</p>
+</blockquote>
+
+<p>我们知道，非平凡的解析函数的零点总是孤立的，但是对于调和函数，由均值性质和连续性立刻得出，其零点一定不孤立:</p>
+
+<blockquote>
+  <p><strong>推论(零点性质)</strong> 调和函数的零点不孤立.</p>
+</blockquote>
+
+<p>例如调和函数$u(x,y)=x\sin y$, 其零点为${y=2n\pi:n\in \mathbb Z}$.</p>
+
+<h3 id="13-最值原理">1.3. 最值原理</h3>
+
+<p>回忆解析函数的最大模原理，对应的，调和函数也有最大值原理:</p>
+
+<blockquote>
+  <p><strong>定理2(最大值原理)</strong> $G$是区域，$u: G\to\mathbb R$连续且有MPV，如果$u$在一点$a\in G$取最值，那么$u$是平凡的.</p>
+</blockquote>
+
+<p><strong>证明</strong> 一种思路是利用MVP，则$u$在最值点的某个邻域内也取最值，从而${u=u(a)}$是开-闭集. 另一种思路是利用解析函数的开映射定理，但只能解决$G$是单连通区域的情况，这时可以找到$v$的共轭，令$f=u+iv$, 利用$\text{Re}$和$f$是开的，我们立刻得到$u$也是开映射.$\blacksquare$</p>
+
+<p>对于调和函数，<strong><em>最小值原理</em></strong> 也是成立的(考虑$-u$)，这和解析函数略有不同，后者要求对函数的零点进行限制.</p>
+
+<p>最值原理保证了</p>
+<blockquote>
+  <p><strong>推论</strong> 区域上非平凡的调和函数一定是 <strong><em>开映射</em></strong></p>
+</blockquote>
+
+<p>这是因为由于$G$连续，$u(G)$是直线上的连通集，即区间(包括rays), 这时由最值原理知，$u(G)$一定是开区间(or open rays).</p>
+
+<p>当然，我们仍然可以像在 <a href="https://zhuanlan.zhihu.com/p/521191253">Notes-0定理3</a>那里进行一样的推广（仍然通过构造半连续函数来避免冗长的过程） :</p>
+
+<blockquote>
+  <p><strong>定理3(最值大原理)</strong> $G$是区域，$u,v: G\to \mathbb R$ 连续，有MVP，且<strong>有界</strong>，若对任意的$a\in\partial_{\infty}G$, 满足 \(\lim_{z\to a}u(z)\leq \liminf_{z\to a} v(z)\) 则在 $G$ 上 $u&lt;v$ 或 $u\equiv v$.</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>证明：</strong> 仍然是构造半连续函数$g=\limsup (u-v)$, 这个函数在边界上的值是$0$，可以在$\bar G$取到最值，如果$G$内有最值点$a$, 那么由定理1知$g\equiv 0$; 如果$G$内没有最值点，则$g&lt;0$. 注意到$g\big</td>
+      <td>_G=u-v$, Done.$\blacksquare$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>我们把一种常用的情况单独列出:</p>
+
+<blockquote>
+  <p><strong>推论</strong> $G$是区域，$u:\bar G_{\infty}\to\mathbb R$是在$G$内满足MVP的连续函数，如果$G$在边界$\partial_{\infty} G$上取零值，在内部也取零值.</p>
+</blockquote>
+
+<p>也就是说，调和函数被边界上的取值唯一确定，这就说明了Drichlet Problem 中的唯一性问题.</p>
+
+<p><strong>注</strong> 前面的定理都是用MVP作为条件叙述的，实际上，满足MVP的连续函数就是调和函数，这件事情在下一段中证明.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>注</strong> 我们知道，对非平凡的解析函数$</td>
+      <td>f</td>
+      <td>$不仅不能在区域内部取最值，也不存在局部极值，这实际上是因为解析函数在每个点的邻域都有幂级数展开. 下一段将看到，调和函数实际上还是实解析函数，所以不仅有所谓的最值原理，也有极值原理——区域上非平凡的调和函数不可能有局部极值.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="2圆盘上的调和函数">2.圆盘上的调和函数</h2>
+
+<p>调和函数在dilation下仍然调和，所以我们考虑$\mathbb D$上的调和函数。</p>]]></content><author><name></name></author><category term="Math" /><category term="complex analysis" /><summary type="html"><![CDATA[Ley的复分析笔记4-调和函数(1)]]></summary></entry><entry><title type="html">Runge定理</title><link href="http://localhost:4000/blog/math/zhihu-3" rel="alternate" type="text/html" title="Runge定理" /><published>2023-06-28T00:00:00+08:00</published><updated>2023-06-28T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihu-3</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihu-3"><![CDATA[<h1 id="ley的复分析笔记3-runge定理">Ley的复分析笔记3-Runge定理</h1>
+<p>上学期的复变笔记</p>
+<h2 id="1-runge定理">1. Runge定理</h2>
+
+<p>首先来看一个和Cauchy Integral Formula 类似的结果，它断言存在某些曲线，满足Cauchy积分公式成立的条件。</p>
+
+<p><strong>定理1</strong> $K$是区域$G$内的紧集，存在$G-K$内的线段 $\gamma_1,\cdots,\gamma_n$, 使得对任意的$f\in H(G)$和$z\in K$,
+\(f(z)=\sum_1^n\frac{1}{2\pi i}\int_{\gamma_j}\frac{f(w)}{w-z}\mathrm d w\) 
+且这些线段构成几条封闭折线。</p>
+
+<p>粗略的看，我们只需用曲线把$K$各个连通分支 “围起来”。 为了确切起见，我们先做一些准备:</p>
+<blockquote>
+  <p><strong>定向区间</strong> 定向区间是指$\mathbb C$中明确了起点和终点的闭区间. 如果$\Phi$ 是一些定向区间组成的集类，$m_I(p)(m_{E}(p))$, 分别表示以某个$p$为起点(终点)的区间数， 如果对每点$p$， $m_I(p)=m_E(p)$, 我们就说这个类是平衡的。</p>
+</blockquote>
+
+<p>现在如果$\Phi$由有限个两两不同的定向区间组成，而且它是平衡的，那么它一定由几组首尾相接的闭曲线组成。</p>
+
+<p>这件事可以由数学归纳法证明，它等价于代数中的每个变换都可以写成一堆不交循环的乘积；事实上，如果点$p$是线段$I_k$的终点，$J_k$的起点，把$(I_k,p,J_k)$看成一个点，然后考虑变换$\sigma:(I_k,p,J_k)\mapsto (J_k,q,L_k)$, 这两件事是一样的.</p>
+
+<p>现在我们来证明定理1：</p>
+
+<p><strong>证明:</strong> 首先找$2\eta&lt;d(K,G^c)$, 现在在平面上打一个长为$\eta$的网格，则每个小正方形都不会同时和$\partial G,\partial K$相交。找到那些和$K$相交的小正方形$R_1,\cdots,R_m$,以顺时针为正方向，他们的边$\partial R_j$构成了一个平衡的定向区间类. 我们把方向相反的那些区间对除去(例如[a,b],[b,a])，剩余的$\Phi={\gamma_n}$仍然是平衡的。我们断言$\Phi$内的区间都在$G-K$内，因为他们显然不能和$G^c$相交，也不能和$K$相交。</p>
+
+<p>现在，我们来计算对$z\in K$， $\sum_j n(\gamma_j; z)=\sum_1^m\partial R_k$(注意之前去掉区间的操作不会改变总的Winding number). 如果说$z$落在某个$R_j$的内部，那么有$n(\partial R_j; z)=\delta_k^j$. 如果它落在某个$R_j$的边界，那它一定是一列落在内部的点的极限点, 但winding number 是连续的，所以仍然是1.</p>
+
+<p>而对$z\in G^c$， 自然有$\sum_j n(\gamma_j; z)=\sum_1^m\partial R_k=0$, 所以$\sum_j\gamma_j\approx 0$, 现在就可以用通常的Cauchy定理了。 $\blacksquare$</p>
+
+<p>现在我们迈出证明Runge定理的第一步，我们先用零点在紧集$K$外的有理函数$R$在$K$内来逼近$f$。</p>
+
+<p><strong>引理1</strong>： $K$是紧集，$\gamma$ 是$K$ 外的 closed rectifiable curve, $f$ 是$\gamma$ 上的连续函数，则任取$\epsilon$, 总可以找到一个有理函数$R$使得$\forall z\in K$,
+\(\left|\int_{\gamma}\frac{f(w)}{w-z}\mathrm d w-R(z)\right|&lt;\epsilon\)</p>
+
+<p>证明的思路便是利用一致连续在$\gamma$上取足够细的分割$t_j$，使得$f(w)/(w-z)$的值可以用每个$t_j$处的值估计。即取
+\(R(z)=\sum_j\frac{ f(\gamma(t_j))}{\gamma(t_{j-1})-z}[\gamma(t_j)-\gamma(t_{j-1})]\)</p>
+
+<p>到目前为止，结合定理1和引理1，我们已经可以用有理函数$R$逼近$f$了，但是runge定理还需要控制$R$的极点在一个事先给出的集合$E$上.</p>
+
+<p><strong>Runge’s Theorem</strong> $K$是紧集，$E$和$\mathbb C_\infty-K$ 的每个连通分支相交，$f\in H(U),K\subset U$, 则任取$\epsilon&gt;0$, 都可以找到极点全在$E$中的有理函数使得
+\(\sup_K|f-R|&lt;\epsilon\)</p>
+
+<p>我们把极点在$E$上的满足Runge’s theorem 的函数的集合记作$B(E)$，显然$B(E)$是$C(K,\mathbb C)$中的一个algebra. 我们希望$B(E)$就是在含$K$的某个开集里面解析的所有函数.</p>
+
+<p>第一步，我们先证明，对于任意$a\in \mathbb C-K$, $\frac{1}{z-a}\in B(E)$.</p>
+
+<p>(1)如果$\infty\notin E$。记集合
+\(U=\mathbb C-K,V=\{a\in\mathbb C: \frac{1}{z-a}\in B(E)\}\)
+ 则$E\subset V\subset U$</p>
+
+<p>我们要去证$U\subset V$. 我们用的方法便是从$E$开始，一点一点拓宽$V$. 如果$a\in V$, 取$b\in B(a;r)\subset V$，则
+\(\frac{1}{z-b}=\frac{1}{z-a}\left[1-\frac{b-a}{z-a}\right]^{-1}=\sum_0^\infty \frac{1}{z-a}\left(\frac{b-a}{z-a}\right)^n\)</p>
+
+<p>于是$b\in V$, $B(a;r)\subset V$. 注意这也说明$V$是开集. $E$和$U$的每一个连通分支$H$相交，从而$H\cap U$不是空集. 如果$x\in \partial(H\cap V)$, 则$x\neq H$, 否则还可以取到某个球$B(a;r)$含在$V$的内部. 这说明$\text{Cl}{H\cap V}$是$H$中的clopen set, 所以$H\cap V=H$，从而$U\subset V$.</p>
+
+<p>(2)如果$\infty\in E$, 令$E_0=(E-{\infty})\cup{a}$, 则由(1)知任何$a\in \mathbb C-K, \frac1{z-a}\in B(E_0)$. 在复球面上找一个离$\infty$ 足够近(且在$\mathbb C-K$的同一连通分支)，离$K$足够远的 $c$，使得
+\(\frac{1}{z-c}=-\frac 1c\sum_{0}^\infty (z/c)^n\)
+从而$1/(z-c)\in B(E)$, 从而对任意$a\in \mathbb C-K$, $\frac{1}{z-a}\in B(E_0)\subset B(E)$.</p>
+
+<p>第二步，我们完成Runge定理的证明：
+利用定理1取一个封闭折现$\gamma$,利用引理1取出在$K$中逼近$\int_\gamma \frac{f(w)}{w-z}\mathrm d w=f(z)$的$R(z)$. 但是第一步告诉我们，$R$可以用极点在$E$中的有理函数逼近，这就完成了Runge’s theorem的证明。</p>
+
+<p>现在，我们把$K$换到开集$G$上，有：
+ $E$和$\mathbb C_{\infty}-G$的每个连通分支相交，则极点在$E$中的有理函数集合$R(G,E)$在$H(G)$中稠密.</p>
+
+<p>注意，如果$\mathbb C_{\infty}-G$是连通的，那么在$G$上的解析函数都可以被极点在$\infty$的函数，即多项式逼近.</p>
+
+<h2 id="2-单连通区域redux">2. 单连通区域Redux</h2>
+
+<p>Runge定理一个直接而美妙的应用是可以证明以下9条单连通区域的等价条件：</p>
+
+<p>设$G$是一个区域，以下条件等价</p>
+
+<blockquote>
+  <p>(1) 任何$G$中闭曲线$\gamma$和点同伦(homotopic)。</p>
+</blockquote>
+
+<p>对$\frac1{z-a}$用Cauchy定理得到对于任意$a\in \mathbb C-G, n(\gamma;a)=\int_\gamma1/(z-a)=0$，即</p>
+
+<blockquote>
+  <p>(2) 任何$G$中闭曲线$\gamma$和点同调(homologous)。
+(3)  $\mathbb C_{\infty}-K$连通</p>
+</blockquote>
+
+<p>从而Runge定理的推论告诉我们：</p>
+
+<blockquote>
+  <p>(4)任意解析函数可以被多项式逼近</p>
+</blockquote>
+
+<p>由于$\int_\gamma=\lim\int_{\gamma}p_n=0$</p>
+
+<blockquote>
+  <p>(5)任意$f\in H(G)$在 $G$ 内闭曲线上积分为0</p>
+</blockquote>
+
+<p>由Morera定理， $F(z)=\int_\gamma f+f(a)(\gamma0=a,\gamma1=z)$ 是 $f$ 的一个原函数</p>
+
+<blockquote>
+  <p>(6)任意$f\in H(G)$有原函数
+(7) 对任意$f\neq 0$, $G$ 上存在对数分支$\log f$，以及 $z^{1/2}$ 的分支</p>
+</blockquote>
+
+<p>由黎曼映射定理：</p>
+
+<blockquote>
+  <p>(8) $G$ 和单位圆盘同胚(homeomorphism)
+(9)  $G$上调和函数存在调和共轭</p>
+</blockquote>
+
+<p>由(8)可以构造一个同伦从而推出(1),由(9)可以推出(7).</p>
+
+<p>这些结论将区域的分析性质((2)(4)(5)(6)(9))和拓扑性质((1)(3)(8))，以及代数性质((7))联系起来，对于初次学习复分析来说还是感到很美妙的。</p>]]></content><author><name></name></author><category term="Math" /><category term="complex analysis" /><summary type="html"><![CDATA[Ley的复分析笔记3-Runge定理 上学期的复变笔记 1. Runge定理]]></summary></entry><entry><title type="html">黎曼映射定理</title><link href="http://localhost:4000/blog/math/zhihu-2" rel="alternate" type="text/html" title="黎曼映射定理" /><published>2022-05-29T00:00:00+08:00</published><updated>2022-05-29T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihu-2</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihu-2"><![CDATA[<h1 id="ley的复分析笔记-2-riemann-映射定理">Ley的复分析笔记-2: Riemann 映射定理</h1>
+
+<blockquote>
+  <p><strong><em>Proof is the idol before whom the pure mathematician tortures himself. —— Arthur Eddington</em></strong></p>
+</blockquote>
+
+<h2 id="1-montel-引理">1. Montel 引理</h2>
+
+<blockquote>
+  <p><strong>定义:</strong> $\mathcal F\in H(G)$局部有界是指：对$G$中任意一点$a$, 存在$a$的某个邻域$U$使得$\mathcal F$ 在$U$ 上一致有界.</p>
+</blockquote>
+
+<p>在$G$上局部有界等价于在$G$内的每个紧集$K$上都一致有界.</p>
+
+<blockquote>
+  <p><strong>定理1(Montel):</strong>  $\mathcal F\subset H(G)$ 是normal family当且仅当 $\mathcal F$ 在$G$局部有界</p>
+</blockquote>
+
+<p><strong>证明:</strong> 如果$\mathcal{F}$ 是Normal的，但在某个紧集上不一致有界，那么就可以取到$f_n$使得
+\(\begin{align}    k=1,\cdots,n-1, \sup |f_n-f_k|\geq \epsilon\\\end{align}\)
+但这样就选不出在紧集$K$上一致收敛的子列$f_{nk}$, 矛盾.</p>
+
+<p>另一方面，如果$\mathcal{F}$局部有界，
+\(\begin{align}    \{f(a):f\in \mathcal F\}\\\end{align}\)
+也有界，自然有紧闭包. 由Ascoli定理，我们只需要说明$\mathcal F$在$G$的每一点等度连续. 对于一点$a$, 首先确定一个邻域$\bar B(a;2r)\subset G$, $\mathcal{F}$在$B(a;2r)$上一致有界$M$.
+由Cauchy估计, 对于$z\in B(a;r)$
+\(\begin{align*}
+    |f(z)-f(a)|\leq&amp;\int_{|z-a|=2r} \left|\frac{f(w)(z-a)}{(w-z)(w-a)}\right||\mathrm d w|\\\leq&amp;\frac{2M}{r}|z-a|
+\end{align*}\)
+所以是等度连续的. &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<blockquote>
+  <p><strong>推论:</strong> $\mathcal{F}$紧当且仅当$\mathcal{F}$闭且局部有界.</p>
+</blockquote>
+
+<h2 id="2-共形等价">2. 共形等价</h2>
+
+<blockquote>
+  <p><strong>定义：</strong> 两个连通区域$G_1$和$G_2$共形等价是指存在解析双射$f:G_1\to G_2$. 称这样的映射(解析双射)$f$为共形映射(biholomrphism).</p>
+</blockquote>
+
+<p><img src="https://pic4.zhimg.com/80/v2-e760ed2e80f7ad79b577163a5b2cb0d7.png" alt="Image" /></p>
+
+<ol>
+  <li>
+    <p>这是一个等价关系：关键的一点是$f^{-1}$的解析性. 事实上，如果$f$是双射，根据附录的定理4的讨论，$f$的导数不为0. 这时根据定理4知，$f^{-1}$也是解析的.</p>
+  </li>
+  <li>
+    <p>考虑$\mathbb C$，它和什么区域共形等价呢? 由Louville定理知道，$\mathbb C$是不能和任何有界区域共形等价的.</p>
+  </li>
+  <li>
+    <p>如果说$G_1$是单连通的(任何闭曲线可以缩成一点), 与$G_1$同胚的区域是单连通的 与$G_1$共形等价的区域当然也是单连通的.</p>
+  </li>
+  <li>
+    <p>$\mathbb C-(-\infty,0]$和${\text{Re}&gt;0}$共形等价(考虑映射$\sqrt z$)</p>
+  </li>
+</ol>
+
+<h2 id="3-riemann映射定理">3. Riemann映射定理</h2>
+
+<blockquote>
+  <p><strong>定理2(Riemann):</strong> $G$是单连通区域，$G\neq \mathbb C$, $a\in G$. 存在唯一的双射$f:G\to\mathbb{D}\in H(G)$ 使得 $f(a)=0, f’(a)&gt;0$.</p>
+</blockquote>
+
+<p><strong>证明:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>唯一性</strong>：若$f$和$g$均满足定理的条件，那么$f\circ g^{-1}:\mathbb{D}\to\mathbb{D}$是解析的双射，根据[Schwatz定理的推论(定理0-5)]<a href="https://www.zhihu.com/column/c_1513873849452589056">https://www.zhihu.com/column/c_1513873849452589056</a> $f\circ g(z)=e^{i\theta}z$. 但$(f\circ g^{-1})’(0)&gt;0$, 所以$f\circ g^{-1}=1$, 即$f=g$.</p>
+  </li>
+  <li>
+    <p><strong>存在性</strong>: 我们将只使用$G$上有$\sqrt{z}$的解析分支这一条件. 
+令
+\(\begin{align}
+    \mathcal{F}=\{f\in H(G): \text{injective},f(a)=0,f'(a)&gt;0, f(G)\subset \mathbb{D} \}\\
+\end{align}\)
+基本思路是要我们寻找$f’(0)$最大的, 即在$0$处增长最快的$f\in\mathbb{F}$，它最有可能把$G$映满$\mathbb{D}$.
+<strong>step 1: $\mathcal{F}$局部有界(被$1$控制)</strong>; 由Montel引理$\mathcal{F}$是normal的.
+<strong>step 2: $\mathcal{F}$非空，即至少存在把$G$映到$\mathbb{D}$内的共形映射:</strong>
+  <strong>(a)</strong>. 取$b\in G^c$, 令$g(z)=\sqrt{z-b}, g^2=z-b$, $g$是单射. 取$B(g(a),r)\subset G$, 则断言$-B(g(a),r)=B(g(a),r)$与$g(G)$不交(若不然,$g(w)=-g(z)\Rightarrow w=z\Rightarrow g(z)=0,z=b$,矛盾).</p>
+
+    <p><strong>(b)</strong>. 取把$-B(g(a),r)$映到$\mathbb D$外， 把$[-B(g(a),r)]^c$映到$\mathbb D$内的Mobius变换$T$. $g_1=T\circ g$是解析单射, 且$g_1(G)\subset \mathbb{D}$.   <img src="https://pic4.zhimg.com/80/v2-f333dc1081f6cf9315dcbd45202106d0.jpg" alt="Image" /></p>
+
+    <p><strong>(c)</strong>. 若$\alpha=g_1(a),g_2=\phi_{\alpha}\circ g_1$, $g_2(a)=0$. 再取
+  \(\begin{align}
+      g_3(z)=\frac{|g_2'(a)|}{g_2'(a)}g_2(z)\\
+  \end{align}\)
+  则$g_3’(0)&gt;0$. $g_3\in\mathbb{F}$.</p>
+  </li>
+</ul>
+
+<p><strong>step 3: 往证</strong> 
+\(\begin{align}
+    \bar{\mathcal F}\subset\mathcal F\cup \{0\}\\
+\end{align}\) 
+为了说明这件事，考虑任意的序列$f_n\in\mathcal F$且$f_n\to f$. 若$f$不恒为$0$, 由$f_n(a)=0,f_n’(a)&gt;0,f_n(G)=\mathbb{D}$, 我们得到$f(a)=0,f’(a)\geq 0, f_n(G)\subset\overline{\mathbb{D}}$, 由开映射定理$f(G)\subset\mathbb D$.
+    现在,只要验证$f$是单射，这样$f’(a)&gt;0$且$f\in\mathcal F$. 为此考虑$z_1\neq z_2\in G, \bar B(z_1,r)\in G$且$z_2\notin \bar B(z_1,r)$. 由于$f_n(z)-f_n(z_2)\to f(z)-f(z_2)$, 且前者不消失，由Hurwitz定理，$f$要么不消失，也就是说$f(z_2)\neq f(z_1)$; 要么$f(z)=\text{Const}=f(a)=0$.<img src="https://pic4.zhimg.com/80/v2-adf84434282120f1cb737495734466b6.jpg" alt="Image" /></p>
+
+<p><strong>step 4:</strong> 函数
+    \(\begin{align}    h:H(G)\to\mathbb C,f\mapsto f'(a)\\\end{align}\)
+    是连续函数, 由于$\overline{\mathcal{F}}$是紧集，$h(\overline{\mathcal{F}} )$有最大值. 设在$f\in \mathcal F$取到(不可能在0取). 我们断言$f\in\mathcal F$ 即为所求. 若$w\in \mathbb{D}, w\notin f(\mathbb D)$, 构造
+    \(\begin{align}        h=\sqrt{\phi_w\circ f}, g=\frac{|h'(a)|}{h'(a)}\phi_{h(a)}\circ h\\\end{align}\)
+    则$g(G)\subset G, g(a)=0, g$是单射, 且
+    \(\begin{align}
+        g'(a)=\frac{|h'(a)|}{h'(a)}\phi'_{h(a)}(h(a))h'(a)=\frac{1+|w|}{2\sqrt{w}}f'(a)&gt;f'(a)\\
+    \end{align}\)
+    这与$f’(a)$是最大值矛盾.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<p>上面的存在性证明只使用了对$f\neq 0$, $G$上存在$\sqrt{f}$的解析分支这个条件，为了方便后面引用，我们把它单独列成一个定理:</p>
+
+<blockquote>
+  <p><strong>定理 3</strong> $G\neq \mathbb{C}$, 且对任意$f\neq 0$, $G$上存在$\sqrt{f}$的解析分支, 给定$a\in G$, 存在共形映射$f:G\to\mathbb D$，$f(a)=0,f’(a)&gt;0$.</p>
+</blockquote>
+
+<h2 id="4-单连通区域">4. 单连通区域</h2>
+
+<blockquote>
+  <p><strong>定理 4:</strong> 对连通区域, 以下条件等价:<img src="https://pic4.zhimg.com/80/v2-b50122580a2afb1ee1c471ce8802d814.png" alt="Image" /></p>
+</blockquote>
+
+<h2 id="5-附录">5. 附录</h2>
+
+<p>回忆以下幅角定理的推论:</p>
+<blockquote>
+  <p><strong>定理 5：</strong> 若$f(z)-\alpha$在$a$点有一个$m$重根，那么可以找到$\alpha$的一个邻域$U(\alpha)$，使得$\forall\xi\in U(\alpha), f(z)-\xi$恰有$m$个单根.</p>
+</blockquote>
+
+<p><img src="https://pic4.zhimg.com/80/v2-819c284a1aa40c9707e81618fa193175.jpg" alt="Image" />
+特别的，如果$f$在$a$点导数是零，则$f(z)-\alpha$的重数大于1，所以不可能是单射.</p>
+
+<blockquote>
+  <p><strong>定理4：</strong> 若$f\in H(G), f’\neq 0$, 且$f$是双射， 则$f$的反函数可微且
+\(\begin{align}
+    (f^{-1})'=1/f \\
+\end{align}\)</p>
+</blockquote>]]></content><author><name></name></author><category term="Math" /><category term="complex analysis" /><summary type="html"><![CDATA[Ley的复分析笔记-2: Riemann 映射定理]]></summary></entry><entry><title type="html">解析函数空间</title><link href="http://localhost:4000/blog/math/complex0" rel="alternate" type="text/html" title="解析函数空间" /><published>2022-05-28T00:00:00+08:00</published><updated>2022-05-28T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/complex0</id><content type="html" xml:base="http://localhost:4000/blog/math/complex0"><![CDATA[<h1 id="复分析笔记-1">复分析笔记-1</h1>
+<h2 id="1-连续函数空间-cgomega">1. 连续函数空间 $C(G,\Omega)$</h2>
+<h3 id="11-函数空间上的常用拓扑">1.1. 函数空间上的常用拓扑</h3>
+<p>先复习一些函数空间的相关知识:<br />
+在$Y^X$中常用以下拓扑: 设$X$是拓扑空间，$(Y,d)$是度量空间,<br />
+** (a) 一致度量诱导的一致拓扑(uniform topology) ** 
+ <strong>(b) 点态收敛拓扑( topology of pointwise convergence):</strong>
+  $x\in X$, U是$Y$中开集，记\(\boxed{\color{blue}{S(x,U)=\{f\in Y^X:f(x)\in U\}}}\)作为一族Subbasis生成的拓扑 <br />
+ <strong>(c)紧致收敛拓扑( topology of compact convergence):</strong>
+ $K\subset X$是紧集, $f\in Y^X$, 记\(\boxed{\color{blue}{B_K(f,\epsilon)=\{g\in Y^X:\sup_Kd(f(x),g(x))&lt;\epsilon \}}}\) 那么${B_K(f,\epsilon): K\subset G,f\in Y^X, \epsilon&gt;0}$作为一个Subbasis( 实际上可以验证这是一族Basis )生成一个拓扑, 即紧致收敛拓扑。</p>
+
+<p>紧致收敛拓扑闭一致拓扑粗糙，但比点态收敛拓扑细。</p>
+
+<p>如果$Y$是一般的拓扑空间，那么紧致收敛拓扑可以推广为:<br />
+<strong>(d)紧-开拓扑(compact-open topology):</strong> 
+$K\subset X$是紧集，$U\subset Y$是开集，记\(\boxed{\color{blue}{S(K,U)=\{f\in C(X,Y)：f(K)\subset U\}}}\)
+则${S(K,U)}$作为一族Subbasis生成$Y^X$上的拓扑。</p>
+
+<p>另外，我们回忆一般的Ascoli定理:</p>
+<blockquote>
+  <p><strong>定义 (等度连续)</strong>：$X$是拓扑空间,$(Y,d)$是度量空间， $\mathcal F\subset Y^X$在$x_0\in X$等度连续，是指任取$\epsilon&gt;0$, 存在$x_0$的邻域$U$，使得\(\forall x\in U,\forall f\in\mathcal F, d(f(x),f(x_0))&lt;\epsilon\)</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>定理1(Ascoli)</strong>: $X$是拓扑空间,$(Y,d)$是度量空间，在$Y^X$上装备紧致收敛拓扑，对$\mathcal F\subset C(X,Y)$:<br />
+(1)$\mathcal F$ 等度连续 ;<br />
+(2)$\mathcal F(a)={f(a):f\in\mathcal F}$有紧闭包<br />
+则$\mathcal F$含在$C(X,Y)$的某个紧子集中。
+如果$X$还是紧Hausdorff空间，逆定理也成立。</p>
+</blockquote>
+
+<h3 id="12-度量空间-cgomega">1.2. 度量空间 $C(G,\Omega)$</h3>
+<p>考虑完备的度量空间$(\Omega,d)$，例如$\mathbb C, \mathbb C_{\infty}$(装备其常用的度量)等. 为了方便讨论空间$C(G,\Omega)$中的极限等问题，就要给空间一个适当的拓扑，特别的，可以直接给出一个度量，然后使用这个度量所确定的拓扑。(后面会看到这就是Topology of Compact Convergence)。</p>
+
+<p>首先，可以用适当的紧集套去逼近$\mathbb C$中的开集：</p>
+<blockquote>
+  <p><strong>引理 1</strong>：G是 $\mathbb C$ 中的开集，那么存在一列紧集 $K_n\subset G$ s.t. $G=\bigcup_n K_n$, 且<br />
+   (1)  $K_n\subset \text{Int} K_{n+1}$<br />
+     (2)  对于任意紧集 $K\subset G$， 存在 $n$ s. t. $K\subset K_n$<br />
+   (3) $\mathbb C_{\infty}-K_n$的每个连通分支含有 $\mathbb C-G$的一个连通分支</p>
+</blockquote>
+
+<p><strong>证明:</strong> 令\(K_n=\left\{z:d(z,G^c)\geq \frac1n\right\}\cap \bar B(0,n)\)就可以啦。  &lt;p align="right"&gt;$\Box$&lt;/p&gt;</p>
+
+<p><strong>注:</strong> 性质(3)在证明Runge 定理的时候会用到。</p>
+
+<p>现在我们在$C(G,\Omega)$上引入度量$\rho$, 令$K_n$是引理1中的紧集列, 定义：
+\(\begin{align*}
+    \color{yellow}{\rho_n(f,g)=\sup_{K_n}\{d(f(z),g(z))\}}\\\color{yellow}\rho(f,g) =\sum_n\frac1{2^n}\frac{\rho_n(f,g)}{1+\rho_n(f,g)}
+\end{align*}\)
+确定$\rho$的级数被$\sum_n2^{-n}$控制，所以是收敛的。另外，$\rho$ 满足 ( $d(f,g)=0\iff f=g$ )和对称性；所以只需验证三角不等式，注意到以下结论：</p>
+<blockquote>
+  <p>若$f:\mathbb R_+\to\mathbb R_+$是严格凸函数，$f(0)=0$, $d$是一个度量，则$f\circ d$也是度量。</p>
+</blockquote>
+
+<p>另外，由于$\rho$的值和$K_n$的选取有关，自然要问 <strong>其确定的拓扑是与$K_n$的选择有关的吗？</strong></p>
+
+<blockquote>
+  <p><strong>引理 2</strong>：(1)给定$\epsilon&gt;0$, 存在紧集$K\subset G$和$\delta&gt;0$, \(\boxed{\color{green}{\sup_{K}d(f(z),g(z))&lt;\delta\Rightarrow\rho(f,g)&lt;\epsilon}}\)  (2)给定紧集$K$和$\delta&gt;0$, 存在$\epsilon&gt;0$，\(\boxed{\color{green}{\rho(f,g)&lt;\epsilon}\Rightarrow \sup_K d(f(z),g(z))&lt;\delta}\)</p>
+</blockquote>
+
+<p><strong>证明：</strong>  (1) 首先可取足够大的$N$, 使得$\sum_{N+1}^{\infty}2^{-n}&lt;\frac\epsilon2$, 我们取紧集$K=K_N$ 和$\delta$使得$\frac{\delta}{1+\delta}&lt;\frac{\epsilon}{2}$, 这样\(\rho(f,g)=\left(\sum_1^N+\sum_{N+1}^{\infty}\right) \frac{\rho_n}{2^n(1+\rho_n)}\leq \frac\epsilon2+\frac\epsilon2=\epsilon\)<br />
+(2) 仍然取足够大的$N$,使得$K\subset K_N$, 我们让$\epsilon&lt;\frac1{2^N}\frac{\delta}{1+\delta}$, 这样\(\sum_n\frac1{2^n}\frac{\rho_n(f,g)}{1+\rho_n(f,g)}&lt;\epsilon\Rightarrow \rho_N(f,g)&lt;\delta\)&lt;p align="right"&gt;$\Box$&lt;/p&gt;
+现在便可以得出</p>
+<blockquote>
+  <p><strong>定理 2</strong>：(1) $\mathcal O\subset C(G,\Omega)$ 开 $\iff$ 任取 $f\subset C(G,\Omega)$ 存在紧集 $K$ 和 $\delta$ 使得 ${g:\sup_Kd(f(z),g(z))&lt;\delta}\subset \mathcal O$<br />
+(2)$C(G,\Omega)$中的收敛是在内部紧集上的一致收敛。</p>
+</blockquote>
+
+<p>(1)告诉我们，开集的类和$K_n$的选取无关。</p>
+
+<p>事实上，根据1.1的内容，我们现在以经知道，$C(G,\Omega)$上的拓扑就是紧致收敛拓扑。</p>
+
+<p>利用$(\Omega,d)$的完备性，我们可以得到</p>
+<blockquote>
+  <p><strong>定理 3</strong>: $C(G,\Omega)$是完备的度量空间。</p>
+</blockquote>
+
+<p><strong>证明</strong>: 设$f_n$ 是$C(G,\Omega)$中的Cauchy列，对于给定的紧集$K$, $f_n$显然也是空间$C(K,\Omega)$装备上一致范数后的柯西列，这个空间是完备的，存在$f\in C(K,\Omega), f_n\rightrightarrows f$ on $K$，这里$f(z)$是$f_N(z)$在$\Omega$中的极限。于是，$f_n\to f$ in $C(G,\Omega)$, $C(K,\Omega)$自然是完备的。&lt;p align="right"&gt;$\Box$&lt;/p&gt;</p>
+<h2 id="2-解析函数空间hg">2. 解析函数空间$H(G)$</h2>
+<h3 id="21-hg的拓扑性质">2.1 $H(G)$的拓扑性质</h3>
+<p>现在我们可以考虑最关心的解析函数空间$H(G)$了. 在$H(G)$上装备$C(G,\Omega)$中的度量。首先，可以说明$H(G)$是闭集, 而且求导运算\(\partial_z:H(G)\to H(G); f\mapsto f'\)  是连续函数：</p>
+<blockquote>
+  <p><strong>定理 4</strong>：$f_n\subset H(G),f_n\to f\in C(G,\Omega)$, 则 $f\in H(G)$.  且$f_n^{(k)}\to f^{(k)}(k\geq 1).$</p>
+</blockquote>
+
+<p><strong>证明</strong>:任取开球$B\subset G$, 对于任何三角形围道$T\in B$, $\int_T f_n=0\to\int_{T}f=0$, 所以Morera定理给出$f$在$B$中解析. $B$是任意的，所以$f\in H(G)$. <br />
+   取适当的紧集$K$和$\delta$, 使得$\sup_K|g,h|&lt;\delta\Rightarrow d(g,h)&lt;\epsilon$. 对于$K$, 可使用有限个球$B^{r/2}<em>j, \bar B^{r}_j\subset G$覆盖$K$,  现在，利用Cauchy估计, 对于$z\in B^{r/2}$:\(\begin{align*}|f_n^{(k)}(z)-f^{(k)}(z)|\leq&amp;\frac{k!}{2\pi}\int_{\partial B^{r}}\left|\frac{f_n(w)-f(w)}{(w-z)^{k+1}}\right||\mathrm d w|\\\leq&amp; \frac{k!r}{(r/2)^{k+1}}\sup_K|f_n(w)-f(w)|\end{align*}\)
+所以$f^{(k)}$在$K$上一致收敛到$f^{(k)}$, 由$K$的任意性$f^{(k)}_n\to f^{(k)}$ in $H(G)$.&lt;p align="right"&gt;$\Box$&lt;/p&gt;
+<strong>注</strong>：上面证明中有限覆盖的操作可以有很多方法，例如，先在每个点做半径$r&lt; d(K,G^c)$的球$B(z,r)$, 从${B(z,r/2)}</em>{z\in K}$中取有限覆盖。</p>
+
+<p>所以，在紧致收敛意义下，”解析函数的极限是解析函数”。
+<!--我们常常还会遇到在包含集合$K$的某个开集解析的函数空间$H(K)$,-->
+由定理3和完备空间的子空间完备当且仅当它是闭集， 我们得到</p>
+<blockquote>
+  <p>推论1：$H(G)$ 是完备的。</p>
+  <h3 id="22-解析函数的零点">2.2 解析函数的零点</h3>
+  <p>设 $p_n(z)=\sum_{k=1}^na_{nk}z^k$ 是多项式，且$a_{nk}\to a_k$ as $n\to\infty$, 我们可以说$p_n$的根趋于$p(z)=\sum_{k=1}^{\infty}a_kz^k$吗？或者说，当一列解析函数$f_n$趋于$f$的时候，其零点变化是”连续的”吗？
+<strong>定理5(Hurwitz)</strong>: $G$是一个连通区域，列$f_n\to f$ in $H(G)$, 如果$f$不恒为0，则对任何$\bar B(a;r)\subset G$, 且$f\neq 0$ on $\partial \bar B$，可以找到$N$使得$n&gt;N$时$f_n$和$f$在$B$内有相同的零点数(记重数的).</p>
+</blockquote>
+
+<p>注意，由于$f$不恒为0，在$B$内零点数是有限的。<br />
+<strong>证明:</strong> $|f|$在$\partial B$上的最小值记为$m&gt;0$,找到$N$ 当$n&gt;N$时 \(|f_n-f|&lt;\epsilon&lt;m\)我们有
+\(|f_n-f|&lt;\epsilon&lt;|f|+|f_n|\) 
+由$\text{Rouch'e}$定理知，$f,f_n$在$B$内有相同的零点数。&lt;p align="right"&gt;$\Box$&lt;/p&gt;</p>
+
+<h2 id="3-normal-families-和-montel-定理">3. Normal families 和 Montel 定理</h2>
+<p>这一部分内容是为证明 Riemann 映射定理做一些准备.</p>
+<blockquote>
+  <p><strong>定义：</strong> 称$\mathcal F\subset C(G,\Omega)$为Normal Family是指其中的任意序列都有子列收敛到$f\in C(G,\Omega)$.</p>
+</blockquote>
+
+<p>注意这个定义和序列紧(Sequentially Compact)的区别，这里的$f$ 并不要求包含在$\mathcal F$ 中。直接由定义就可以看出:</p>
+<blockquote>
+  <p><strong>引理 3：</strong> $\mathcal F$ normal，当且仅当它包含在某个$C(G,\Omega)$的紧子集中，当且仅当 $\text{Cl}({\mathcal F})$紧。</p>
+</blockquote>
+
+<p>由于$\mathbb C$是局部紧的Hausdorff空间，自然成立Ascoli定理。我们将用它证明Montel定理和黎曼映射定理。</p>]]></content><author><name></name></author><category term="Math" /><category term="complex analysis" /><summary type="html"><![CDATA[复分析笔记-1 1. 连续函数空间 $C(G,\Omega)$ 1.1. 函数空间上的常用拓扑 先复习一些函数空间的相关知识: 在$Y^X$中常用以下拓扑: 设$X$是拓扑空间，$(Y,d)$是度量空间, ** (a) 一致度量诱导的一致拓扑(uniform topology) ** (b) 点态收敛拓扑( topology of pointwise convergence): $x\in X$, U是$Y$中开集，记\(\boxed{\color{blue}{S(x,U)=\{f\in Y^X:f(x)\in U\}}}\)作为一族Subbasis生成的拓扑 (c)紧致收敛拓扑( topology of compact convergence): $K\subset X$是紧集, $f\in Y^X$, 记\(\boxed{\color{blue}{B_K(f,\epsilon)=\{g\in Y^X:\sup_Kd(f(x),g(x))&lt;\epsilon \}}}\) 那么${B_K(f,\epsilon): K\subset G,f\in Y^X, \epsilon&gt;0}$作为一个Subbasis( 实际上可以验证这是一族Basis )生成一个拓扑, 即紧致收敛拓扑。]]></summary></entry><entry><title type="html">最大模原理</title><link href="http://localhost:4000/blog/math/zhihu0" rel="alternate" type="text/html" title="最大模原理" /><published>2022-05-28T00:00:00+08:00</published><updated>2022-05-28T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/zhihu0</id><content type="html" xml:base="http://localhost:4000/blog/math/zhihu0"><![CDATA[<h1 id="ley的复分析笔记-0">Ley的复分析笔记-0</h1>
+<p>本节介绍最大模原理(<strong>MMP</strong>)和它的一些应用.</p>
+<h2 id="1-最大模原理">1. 最大模原理</h2>
+<p>这一段将给出最大模定理的不同版本及其推广.</p>
+<h3 id="11-return-to-basis">1.1. Return to basis.</h3>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理1</strong> (1st-Version) 设$G$是一个连通区域，$f\in H(G)$，若$</td>
+        <td>f</td>
+        <td>$在$a\in G$取最大值, 则$f$是常函数.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p><strong>证明:</strong> 我们可以用解析函数的均值定理(Cauchy积分公式的推论)
+\(f(a)=\frac1{2\pi}\int_{0}^{2\pi}f(a+re^{i\theta})\mathrm d\theta\)
+看出, 在$a$点的某个邻域内
+\(|f(z)|=|f(a)|\)
+ 由C-R方程 (或直接由Mobius变换的性质) 可得到$f$在$a$的某个邻域取常值. 又根据解析函数零点的特点, $f$必定在连通区域$G$内取常值.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>另一方面，从开映射定理的角度来看，由于在$f$不是常函数时，$</td>
+      <td>\cdot</td>
+      <td>$和$f$都是开映射( 注意要求$G$是连通的! ), $</td>
+      <td>f</td>
+      <td>(G)$是$[0,\infty)$上的开集，自然不可能有最大值.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>注意上面的定理需要$G$ 的连通性. 没有这个条件，我们常常会需要在各个连通分支上运用定理1. 如果考虑的是在$G$的闭包上连续的函数，定理1的另一个表述为:</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理2:</strong> (2nd-Version) 设$G$ 是一个有界开集，$f\in H(G)\cap C(\bar G)$, 则$f$一定可以在边界取最大模，即  $$\max_{\bar G}</td>
+        <td>f</td>
+        <td>=\max_{\partial G}</td>
+        <td>f</td>
+        <td>$$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>证明</strong>: 注意到$\bar G$是紧集，$</td>
+      <td>f</td>
+      <td>$可取到最大值，设在$a$取到.  如果$a\in\partial G$, Done. 如果$a\in G$, 那么$f$在$a$所在的连通分支$H$上是常数，从而在$\partial H$上也取到最大值. &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>在$G$连通时，有
+\(\forall z\in G,|f(z)|\leq \max_{\partial G}|f|\) 
+且如果取等，那么$f$是常函数.</p>
+
+<p>注意如果没有连通性，即使$f$不是常函数，也完全可以在$G$内部取到极值.</p>
+
+<h3 id="12-一些推广">1.2. 一些推广</h3>
+<p>现在我们考虑，能否丢掉有界这个条件，使得$|f|$仍然可以在边界取最大值呢? 自然是不能的，毕竟，当$\bar G$无界时，我们还不能确定最大值的存在性. 但是，我们可以把$\max$ 改成 $\sup$, 在推广的实数系$\overline{\mathbb R}$上取值，从而得到\(\sup_{\bar G}|f|=\sup_{\partial G}|f|\)
+吗? 答案是否定的. 考虑
+\(f(z)=\exp\{\exp z\}, G=\mathbb R\times(-\pi/2,\pi/2)\)
+ $|f|$在边界上取$1$， 但在实轴上的值可以接近$+\infty$. 
+ 问题的其中一个关键在于，拓扑中的最值原理:</p>
+<blockquote>
+  <p><strong>引理1</strong>: $X$是紧的拓扑空间，$Y$是带序拓扑的空间， $f:X\to Y$是连续函数，则一定可以取到最值.</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td>要求定义域的紧性，而$\mathbb C$ 不是紧的，我们考虑其one-point compactness: $\mathbb C_{\infty}$. 这时，$</td>
+      <td>f</td>
+      <td>$的最值自然可以在$\overline{G}_{\infty}$上取到. 于是，和定理2相似的结论便是</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>&gt;定理2*: 设$G\subset\mathbb C{}$ 是开集, $f\in H(G)\cap C(\bar G)$且 $\lim_{z\to \infty}</td>
+      <td>f</td>
+      <td>$存在, 则$$\max_{\bar G_{\infty}}</td>
+      <td>f</td>
+      <td>=\max_{\partial_{\infty}G}</td>
+      <td>f</td>
+      <td>$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>证明:</strong> $</td>
+      <td>f</td>
+      <td>$在 $\bar G_{\infty}$上连续，那么一定可以取到最值. 重复定理2的证明即可. &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>为了便于叙述，我们先引入半连续性的概念:</p>
+<blockquote>
+  <p><strong>定义：</strong> 设$X$是一个拓扑空间，称$f:X\to\overline{\mathbb R}$上半连续的是指:$\forall c\in\mathbb R$, ${f&lt;c}$ 是闭集.</p>
+</blockquote>
+
+<p>在$X$是第一可数空间(在一般空间中需要用net来定义)时，它等价于</p>
+<blockquote>
+  <p>$\forall x_0\in X,\limsup_{x\to x_0} f(x)\leq f(x_0)$</p>
+</blockquote>
+
+<p>对于半连续函数，我们有最值原理:</p>
+<blockquote>
+  <p><strong>引理2</strong>: 若$X$是紧空间，则$X$上的上半连续函数有最大值, 且最值点也是紧的.</p>
+</blockquote>
+
+<p><strong>证明:</strong> 考虑$A=f(X)$, $F_c={f\geq c}$是闭的，而且${F_c:c\in A} $ 满足f.i.p(有限交不空), 从而 $\bigcap_{c\in A} F_c$ 是非空紧集, 且其恰为最大值点集.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<p>现在回到最大模原理，考虑更一般的情况：$f$ 可能做不到在边界上连续, 这时$f$ 模的最值情况如何呢? 一个自然的想法是考虑函数
+\(\limsup|f|：\overline{G}_{\infty}\to \overline{\mathbb R}, z\mapsto\limsup_{w\to z}|f(w)|\) 
+这个函数是半连续的, 也满足最值定理. 而且
+\(\limsup|f|\big|_G=|f|\)
+有了这些，便可以给出</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理 3</strong>(3rd-Version) : $G\subset \mathbb C$是开集, 则$\limsup</td>
+        <td>f</td>
+        <td>$一定在边界$\partial_{\infty} G$上取得到最值, 从而$$\forall z\in G, f(z)\leq \sup_{z\in\partial_{\infty}G}(\limsup</td>
+        <td>f</td>
+        <td>)(z)$$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>证明：</strong> 设$\limsup</td>
+      <td>f</td>
+      <td>$在$a$取最大值. 那么$a\in \partial_{\infty}G$, Done.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>若$a\in G$, 那么可以知道$f$在该连通分支取常数，从而也在边界$\partial G$上取得到最值. 但是$\partial G\subset\partial_{\infty} G$, Done.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<p>定理3实际上蕴含了定理2*.</p>
+
+<p>回顾定理2和定理3，,在$f$或$\limsup f$在边界上无界的时候，实际上是没有意义的. 我们所做的工作，本质是通过用函数在边界的模控制函数在$G$内的模.</p>
+
+<h3 id="13-phragmen-lindelof-定理">1.3. Phragmen-Lindelof 定理</h3>
+<p>在这一段最后，我们介绍这个114年前由 E.Lindelof 和 E.Phragmen 给出的结果. 我们延续之前的做法，控制函数在边界上的行为，但这次仅仅对$|f|$的”增长” 进行限制，而不是要求他们有界，同样可以得到$f$有界的结果. 当然，这还需要对$G$的拓扑性质有一些限制:</p>
+
+<blockquote>
+  <p>设$G$是一个连通开集，且满足: $\forall z\in \partial_{\infty} G, \exists B_{\infty}(z;\rho)\cap G$是单连通区域.</p>
+</blockquote>
+
+<p>例如，任何单连通区域， $\mathbb C$中的圆环都满足上述条件.</p>
+
+<blockquote>
+  <p><strong>定理4(Phragmen-Lindelof)：</strong> $f\in H(G), \phi:G\to\mathbb C\in H(G)$没有零点且有界. $\partial_{\infty}=A\cup B$有以下两种点组成:<br />
+(1) $a\in A: (\limsup |f|)(a)\leq M$;<br />
+(2) $b\in B: \forall \eta&gt;0, (\limsup |f||\phi|^{\eta})(b)\leq M  $ . <br />
+则$\forall z\in G, f(z)\leq M$.</p>
+</blockquote>
+
+<p><strong>证明：</strong> 不妨设${|\phi|}\leq L$且$L&gt;1$. 先考虑$G$是单连通区域的情形. 这时$G$上存在$\log \phi$的解析分支，从而也有$\phi^\eta$的解析分支($\exp{\eta\log\phi}$). 考虑
+\(F=f\left(\frac{\phi}{L}\right)^{\eta}\)
+则$F$满足
+\(\sup_{z\in\partial_{\infty}G}(\limsup |F|)(z)\leq \max\{M,ML^{-\eta}\}=M\)
+这时由定理3知，$\forall z\in G, |f(z)|\leq (L/\phi)^{\eta}M$.
+由于$\eta$是任取的, $\forall z\in G, |f(z)|\leq M$. 对于一般的区域，我们只需要在覆盖边界的每个单连通区域$V(z)$内进行上面的操作, 则在每个$V(z)$内
+\(|f|\leq {\sup_{\partial_{\infty} V(z)} f}\leq\max\{L,\sup_{\partial V(z)\cap \bar G} \limsup|f|\}\)
+ 但$\partial V(z)\cap \bar G$是紧集，所以$\limsup |f|$在$\partial G\cap \partial V(z)$取最值. 即在$V(z)$中：
+ \(|f|\leq L\)
+ 令
+\(H=G-\bigcup_{z\in\partial_{\infty} G} V(z)\)
+则$H$是$G$中的紧集. $|f|$在$H$上的最值在$\partial H$取到, 但$\partial H\subset\bigcup_z\partial V(z)$. 综上知$|f|\leq L$ in $G$. &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<p>利用定理4，我们给出一个第三段用到的推论:</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>推论1：</strong> 设$G$是一个单连通区域, $f\in H(G)\cap C(\bar G)$, 且$\sup_{G}</td>
+        <td>f</td>
+        <td>=L&lt;\infty$. 则$$ \forall z\in G,</td>
+        <td>f(z)</td>
+        <td>\leq\sup_{\partial G}</td>
+        <td>f</td>
+        <td>$$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p><strong>证明:</strong> 只需考虑$G$无界的情况. 设$\sup_{\partial G}|f|=M\leq L&lt;\infty$. 考虑函数$g=f/M$,则$|g|\leq 1$ on $\partial G$. 令 
+\(\phi=\frac{1}{2L/M+g}\) 
+则$\phi$在$G$上有界且没有零点.
+\(\limsup_{z\to\infty} |g||\phi|^{\eta}\leq 1\)
+ 由$\partial_{\infty} G=\partial G\cup{\infty}$, 它们分别对应定理4中的$A,B$. 所以$|g|\leq 1$ on $G$,即$|f|\leq M$ on $G$.  &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;
+推论1对一般的区域$G$也是成立的(见本节附录).</p>
+
+<h2 id="2-schwartz-引理">2. Schwartz 引理</h2>
+<h3 id="21-schwatz">2.1. Schwatz</h3>
+<p>最大模定理一个重要的推论是:</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理5(Schwartz)：</strong> $f:\mathbb D\to \overline{\mathbb D}\in H(\mathbb D)$, $f(0)=0$, 则 $f’(0)\leq 1,</td>
+        <td>f(z)</td>
+        <td>\leq</td>
+        <td>z</td>
+        <td>$， 且任何一个等号成立，则存在实数$\theta$, $f(z)=e^{i\theta}z$.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p><strong>证明:</strong> 对函数$f(z)/z$用最大模定理.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<h3 id="22-一类mobius变换">2.2. 一类Mobius变换</h3>
+<p>Schwartz定理一个直接的应用是，从$\mathbb D$的到自身的共形映射由在0处的值唯一确定了. 为了说明这件事，我们先来回顾一类特殊的Mobius变换. 设$a\in\mathbb D$:
+\(\phi_a(z)=\frac{z-a}{1-\bar az}\)
+在$\overline{\mathbb D}$内它是良定义的, 注意它的边界值
+\(|\phi_a(e^{i\theta})|=\frac{|e^{i\theta}-a|}{|1-\bar ae^{i\theta}|}=1\)</p>
+
+<p>再次运用一下极大模原理便知，$\phi_a:\mathbb D\to\mathbb D$, 且把边界映到边界.
+并注意
+\(\phi_a\circ\phi_{-a}=1=\phi_{-a}\circ\phi_a\)
+这个映射还是双射. 通过直接计算:
+\(\begin{align*}&amp;\phi_a(0)=-a; \phi_a(a)=0; \\&amp;\phi_a'{0}=1-|a|^2; \phi_a'(a)=(1-|a|^2)^{-1} \tag{2.3.1}\end{align*}\)</p>
+
+<h3 id="23-单位圆盘上的共形映射">2.3. 单位圆盘上的共形映射.</h3>
+<p>现在我们考虑函数
+\(f:\mathbb D\to\mathbb D, f(a)=\alpha\)
+令 
+\(g=\phi_{\alpha}\circ f\circ\phi_{-a}\)
+ 则$g(0)=0$. 由Schwatz引理，
+ \(\begin{align*}|g'(0)|=&amp;|\phi_{\alpha}'(\alpha)f'(a)\phi_{-a}'(0)|\\=&amp;\frac{1-|a|^2}{1-|\alpha|^2}|f(a)'|\\ \leq&amp; 1\end{align*}\)
+ 即
+ \(|f'(a)|\leq \frac{1-|\alpha|^2}{1-|a|^2}\tag{2.3.1}\)
+ 且如果上式取等，
+ \(f=\phi_{-\alpha}\circ (e^{i\theta}\phi_{a})\tag{2.3.2}\)
+现在可以看到，如果$f$是双射，那么由反函数求导的定理(这时$f^{-1}$一定解析):
+\((f^{-1})'(a)=\frac1{f'(a)}\leq \frac{1-|a|^2}{1-|\alpha|^2}\tag{2.3.3}\)
+于是(2.3.2)一定成立. 特别的, $\alpha=0$ 时:</p>
+
+<blockquote>
+  <p><strong>定理5：</strong> 若$f:\mathbb D\to\mathbb D$, $f(a)=0$, 当且仅当 $f=e^{i\theta}\phi_{a}$.</p>
+</blockquote>
+
+<h2 id="3-对数凸函数">3. 对数凸函数</h2>
+<h3 id="31-对数凸logarithmically-convex">3.1 对数凸(Logarithmically convex)</h3>
+<p>顾名思义，$f$对数凸是指$\log f$凸.</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理6：</strong> 设$G=(a,b)\times \mathbb R$, $f\in C(\bar G)\cap H(G)$不是常函数. $</td>
+        <td>f</td>
+        <td>&lt;L$ in $G$. 令$$M:[a,b]\to \mathbb R,x\mapsto \sup_{ y\in\mathbb R}</td>
+        <td>f(x+iy)</td>
+        <td>$$则$M$是对数凸函数.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p><strong>证明:</strong> 注意由于$f$不消失，$M&gt;0$. 往证对任意$x\in(a,b)$
+\(M(x)^{b-a}\leq M(a)^{b-x}M(b)^{x-a}\)
+考虑$\bar G$上的辅助函数
+\(g(z)=M(a)^{\frac{b-z}{b-a}}M(b)^{\frac{z-a}{b-a}}\)
+则
+\(|g(x+iy)|=M(a)^{b-x}M(b)^{x-a}\)
+这说明$1/g$有界. 注意到在$\partial G$上: 
+\(|g(a+iy)|=M(a), |g(b+iy)|=M(b)\)
+由于$G$是单连通的，$f/g$是有界的解析函数，在边界上$|f/g|\leq 1$. 利用推论1得:
+\(\left|\frac fg\right|\leq 1\)
+即
+\(M(a)^{b-x}M(b)^{x-a}=|\sup_{y}g(x+iy)|\geq \sup_y|f(x+iy)|=M(x)\) <br />
+.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+<h3 id="32-hadamards-three-circles-theorem">3.2 Hadamard’s Three Circles Theorem</h3>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理7：</strong>$f\in H({0&lt;R_1&lt;</td>
+        <td>z</td>
+        <td>&lt;R_2})$ 不恒为0. 令$$M:(R_1,R_2)\to \mathbb R; r\mapsto \max_{[0,2\pi)}</td>
+        <td>f(re^{i\theta})</td>
+        <td>$$则$\log M(r)$ 是关于$\log r$的凸函数.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>换句话讲,对$r\in[r_1,r_2]\in(R_1,R_2)$，成立
+\(\log M(r)\leq\frac{\log r_2-\log r}{\log r_2-\log r_1}\log M(r_1)+\frac{\log r-\log r_1}{\log r_2-log r_1}\log M(r_2)\)</p>
+<blockquote>
+  <p><strong>证明：</strong> 考虑函数
+\(g=f\circ e^z; G=[\log r_1,\log r_2]\times \mathbb R\)
+由于$f$在紧集${r_1\leq |z|\leq r_2}$上必然有界，$|g|$也是有界的，且满足定理6的条件, 所以$g(e^x)$是对数凸函数. 将$r=|e^z|=e^x, x=\log r$带入即可. &lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+</blockquote>
+
+<h2 id="4-附录">4. 附录</h2>
+<h3 id="41-推论1的另一证明">4.1. 推论1的另一证明</h3>
+<p>推论1可不限制$G$. 我们给出另一种证明:</p>
+
+<p><strong>证明：</strong> 设$M=\sup_{\partial G}|f|&lt;\infty$. 固定$a\in G$, 考虑函数
+\(g(z)=\frac{f(z)-f(a)}{z-a},g(a)={f'(a)}{}\)
+则$g\in H(G)$且$\lim_{z\to \infty} g=0$, 从而存在$B$s.t.$|g|\leq B$考虑$h=\left(\frac{f}{M}\right)^Ng$, 则$\lim_{z\to\infty}h(z)= 0$. 定理2*说明在$G$内 $|h|\leq B$. 即对$g(z)\neq 0$:
+\(|f(z)|\leq M\left|\frac{B}{g(z)}\right|^{1/N}\)<br />
+但是$N$是任取的，所以
+\(|f(z)|\leq M\)
+由于$g$的零点是孤立的，由连续性得$|f|\leq M$ in $G$.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<h3 id="42-推广的-louville-定理">4.2. 推广的 Louville 定理</h3>
+<blockquote>
+  <p><strong>定理8:</strong> 若$f$是整函数，$|f|\leq 1+\sqrt{|z|}$, 则$f$是常数.
+<strong>证明:</strong> 由Cauchy估计:
+\(|f^{(n)}|\leq \frac{n!M(R)}{R^n}\Rightarrow |f'|\leq \frac{1+\sqrt{|R|}}{R}\Rightarrow |f'|=0\)
+.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;
+定理8和Louville定理的关系类似于Phragmen-Lindelof定理和最大模原理的关系.</p>
+</blockquote>
+
+<p>顺便的，运用MMP，我们还可以得到:</p>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理9：</strong> $f$是整函数，且不是常数，那么存在趋于$\infty$的曲线$$\gamma:[0,\infty)\to \mathbb C,\lim_{\infty}</td>
+        <td>\gamma(t)</td>
+        <td>=\infty$$使得$\lim_{\infty}f(\gamma(t))=\infty$</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>思路是寻找点列$z_n\to\infty$, 使得$f(z_n)\to\infty$, 用线段连接$z_n$, 并用MMP控制中间线段上的模.</p>
+
+<p><strong>证明:</strong> 考虑开集$T_1={|f|&gt;1}, T_n=H_{n-1}\cap{|f|&gt;n}$,$H_n$是$T_n$的一个连通分支. 则容易用MMP证明:<br />
+a. $|f|=1$ on $\partial H$ .  <br />
+b. $f$在$H_n$ 上无界 .</p>
+
+<p>由此我们得到一族非空开集套${H_n}$, 从而在每个$H_n$中选取点列$z_n$, 用$\gamma_n\in H_{n}$连接$z_{n-1}$和$z_n$, $\gamma=\sum_n\gamma$即为所求.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;</p>
+
+<h3 id="43-lindelof定理的其他推广">4.3. Lindelof定理的其他推广</h3>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>定理10：</strong> 把定理4中的$\phi,A\cup B$, 改为$\phi_n, A\cup B_n$. 仍成立$</td>
+        <td>f</td>
+        <td>\leq M$.</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<h3 id="44-最大模原理的逆定理">4.4. 最大模原理的逆定理</h3>
+<blockquote>
+  <p><strong>定理11( Rado )：</strong> 设向量空间$\mathcal F\subset C(\bar{\mathbb D},\mathbb C)$满足<br />
+(1)$1\subset V$,<br />
+(2) $f\in V\Rightarrow zf\in V$,<br />
+(3)$\sup_{\mathbb D}|f|=\sup_{\partial \mathbb D}|f|$ .<br />
+则$V\subset H(\mathbb D)$.</p>
+</blockquote>
+
+<p><strong>证明:</strong> 所有的多项式都在$V$中.
+ \(\partial\bar{\partial}(zf)=\partial(z\bar{\partial} f)=\bar{\partial}f+\partial\bar{\partial} f=0\)
+ 但$f$和$zf$都是调和函数，所以$\bar{\partial}f=0$.&lt;p align="right"&gt;$\blacksquare$&lt;/p&gt;
+ 这个定理告诉我们，最大模原理可以用来刻画解析函数.</p>]]></content><author><name></name></author><category term="Math" /><category term="complex analysis" /><summary type="html"><![CDATA[Ley的复分析笔记-0 本节介绍最大模原理(MMP)和它的一些应用. 1. 最大模原理 这一段将给出最大模定理的不同版本及其推广. 1.1. Return to basis. 定理1 (1st-Version) 设$G$是一个连通区域，$f\in H(G)$，若$ f $在$a\in G$取最大值, 则$f$是常函数.]]></summary></entry></feed>

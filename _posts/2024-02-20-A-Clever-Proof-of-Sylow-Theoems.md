@@ -9,6 +9,10 @@ tags:
 categories: Math
 ---
 
+
+$\newcommand{\d}{\mathrm d} \newcommand{\aa}{\alpha} \newcommand{\bb}{\beta} \newcommand{\ss}{\sigma} \newcommand{\ee}{\epsilon} \newcommand{\oo}{\omega} \newcommand{\dd}{\Delta} \newcommand{\t}{\theta} \newcommand{\ff}{\varphi}$ $\newcommand{\A}{\mathscr A} \newcommand{\F}{\mathscr F} \newcommand{\T}{\mathcal T} \newcommand{\B}{\mathcal B} \newcommand{\P}{\mathscr P} \newcommand{\M}{\mathscr M} \newcommand{\R}{\mathbb R} \newcommand{\Rn}{\mathbb{R}^n} \newcommand{\Z}{\mathbb Z } \newcommand{\N}{\mathb N} \newcommand{\k}{\mathbb K} \newcommand{\Q}{\mathbb Q} \newcommand{\C}{\mathbb C} \newcommand{\K}{\mathbb K}$  $\newcommand{\E}{\mathbb E} \newcommand{\D}{\mathbb D} \newcommand{\p}{\partial} \newcommand{\xb}{\text{Im}} \newcommand{\sb}{\text{Re}} \newcommand{\exp}{\text{exp}} \newcommand{\res}{\text{Res}} \newcommand{\ch}{\text{Char}} \newcommand{\tr}{\text{Tr}} \newcommand{\nb}{\text{Int}} \newcommand{\cl}{\text{Cl}} \newcommand{\id}{\text{id}} \newcommand{\ext}{\text{Ext}} \newcommand{\b}{\overline} \newcommand{\au}{\text{Aut}} \newcommand{\Hom}{\text{Hom}} \newcommand{\End}{\text{End}} \newcommand{\Mat}{\text{Mat}} \newcommand{\ker}{\text{Ker}} \newcommand{\im}{\text{Im}} \newcommand{\Iso}{\text{Isom}} \newcommand{\rad}{\text{Rad}} \newcommand{\abalg}{\textsf{AbAlg}} \newcommand{\alg}{\textsf{Alg}} \newcommand{\wq}{\infty} \newcommand{\st}{\text{ s.t. }} \newcommand{\TO}{\Rightarrow} \newcommand{\kj}{\varnothing} \newcommand{\sy}{\subset} \newcommand{\bh}{\supset} \newcommand{\x}{\times} $ $\newcommand{\yz}{\rightrightarrows} \newcommand{\ot}{\otimes} \newcommand{\od}{\ff\odot\psi} \newcommand{\inc}{\hookrightarrow} \newcommand{\qz}[1]{\left\lfloor#1\right\rfloor} \newcommand{\kh}[1]{\left\langle#1\right\rangle} \newcommand{\hk}[1]{\left\\{#1\right\\}} \newcommand{\yk}[1]{\left(#1\right)} \newcommand{\fk}[1]{\left[#1\right]} \renewcommand{\geq}{\geqslant} \renewcommand{\leq}{\leqslant}  \newcommand{\gs}[1]{\begin{align}#1\end{align}}  \newcommand{\k}{\mathbb k}$
+
+
 # Introduction
 
 One of the fundamental theorems in group theory is Lagrange's theorem: the order of a subgroup of a finite group $G$ must divide $ \|G\| $. A natural question is,
@@ -32,9 +36,9 @@ $\newcommand{\Z}{\mathbb Z}$
 **proof:** Consider the set $$\begin{align}X=\{(g_j)\in G^p:g_1g_2\cdots g_{p}=1\}\end{align}$$
  $\Z_p$ naturally acts on $X$ by permutation, and clearly the size $|X|=|G|^{p}$ is divisible by $p$. Now, consider the orbit decomposition of $X$, the length of the orbit is either $p$ or $1$(i.e. fixed points, points on the diagonal of $G^p$), thus modulo $p$, the number of fixed points must be 0 modulo $p$. Since $(1)\in X$ is one of the fixed points, there must be other $kp-1$ points $(g)$ s.t. $g^p=1$.#
 
-Note that the theorem is true for abelian group
+Note that the theorem is true for abelian group $\gs{this is nice&\\\ =1&1}$ $\Z$ $\frac{1}{\kh{\frac11}}$
 
- $$\begin{align}    \end{align}$$  
+
 
 
 # Let Representation Theory Enter the Game!

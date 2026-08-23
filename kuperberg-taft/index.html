@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draw a decorated Heegaard diagram and compute the exact Kuperberg invariant of an odd Taft algebra.">
+    <meta name="theme-color" content="#17242b">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317242b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='40' font-style='italic' fill='white'%3EK%3C/text%3E%3C/svg%3E">
+    <title>Kuperberg / Taft Diagram Lab</title>
+    <link rel="stylesheet" href="web/styles.css">
+    <script src="web/catalog.js" defer></script>
+    <script src="web/engine.js" defer></script>
+    <script src="web/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#diagram-canvas">Skip to diagram</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Kuperberg Taft Diagram Lab home">
+        <span class="brand-mark" aria-hidden="true">K<sub>&ell;</sub></span>
+        <span>
+          <strong>Diagram Lab</strong>
+          <small>Odd Taft Kuperberg invariants</small>
+        </span>
+      </a>
+      <div class="header-actions">
+        <label class="template-picker" for="template-select">
+          <span>Common diagram</span>
+          <select id="template-select" aria-describedby="template-note">
+            <option value="">Blank canvas</option>
+          </select>
+        </label>
+        <button class="button button-quiet" id="new-diagram" type="button">New</button>
+      </div>
+    </header>
+
+    <main id="top" class="workspace">
+      <section class="diagram-card" aria-labelledby="diagram-heading">
+        <div class="card-heading diagram-heading-row">
+          <div>
+            <p class="eyebrow">Oriented Heegaard surface</p>
+            <h1 id="diagram-heading">Draw the contraction</h1>
+          </div>
+          <p class="canvas-counts" aria-live="polite">
+            <span><b id="lower-count">0</b> lower</span>
+            <span><b id="upper-count">0</b> upper</span>
+            <span><b id="crossing-count">0</b> crossings</span>
+          </p>
+        </div>
+
+        <div class="toolstrip" role="toolbar" aria-label="Diagram drawing tools">
+          <div class="tool-group">
+            <button class="tool is-active" id="tool-select" type="button" data-tool="select" aria-pressed="true">
+              <span aria-hidden="true">↖</span> Select
+              <kbd>V</kbd>
+            </button>
+            <button class="tool tool-lower" id="tool-lower" type="button" data-tool="lower" aria-pressed="false">
+              <span class="tool-swatch" aria-hidden="true"></span> Lower
+              <kbd>L</kbd>
+            </button>
+            <button class="tool tool-upper" id="tool-upper" type="button" data-tool="upper" aria-pressed="false">
+              <span class="tool-swatch" aria-hidden="true"></span> Upper
+              <kbd>U</kbd>
+            </button>
+          </div>
+          <div class="tool-group tool-group-secondary">
+            <button class="tool" id="undo-point" type="button" disabled>Undo point</button>
+            <button class="tool" id="finish-curve" type="button" disabled>Close curve <kbd>↵</kbd></button>
+            <button class="tool tool-danger" id="delete-selection" type="button" disabled>Delete</button>
+          </div>
+        </div>
+
+        <div class="canvas-frame" id="canvas-frame">
+          <svg id="diagram-canvas" viewBox="0 0 900 560" role="application" tabindex="0" aria-label="Interactive Heegaard diagram. Choose a lower or upper curve tool, then click to add vertices. Press Enter to close the curve.">
+            <defs>
+              <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                <path d="M 28 0 L 0 0 0 28" fill="none" stroke="currentColor" stroke-width="0.7"></path>
+              </pattern>
+              <marker id="arrow-lower" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+              <marker id="arrow-upper" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+              <filter id="point-shadow" x="-100%" y="-100%" width="300%" height="300%">
+                <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-opacity=".3"></feDropShadow>
+              </filter>
+            </defs>
+            <rect class="canvas-grid" width="900" height="560" rx="12"></rect>
+            <g id="surface-layer"></g>
+            <g id="curve-layer"></g>
+            <g id="crossing-layer"></g>
+            <g id="vertex-layer"></g>
+            <g id="draft-layer"></g>
+          </svg>
+          <div class="canvas-empty" id="canvas-empty">
+            <span class="empty-glyph" aria-hidden="true">⌁</span>
+            <strong>Begin with a lower curve</strong>
+            <span>Choose <em>Lower</em>, click at least three points, then close the curve.</span>
+          </div>
+          <div class="canvas-toast" id="canvas-toast" role="status" aria-live="polite" hidden></div>
+        </div>
+
+        <footer class="canvas-footer">
+          <div class="legend" aria-label="Diagram legend">
+            <span><i class="legend-line legend-lower"></i>Lower &eta;</span>
+            <span><i class="legend-line legend-upper"></i>Upper &mu;</span>
+            <span><i class="legend-dot"></i>Intersection</span>
+            <span><i class="legend-base"></i>Basepoint + direction</span>
+          </div>
+          <p id="drawing-help">Drag vertices to edit. Crossing order starts at each square basepoint and follows its arrow.</p>
+        </footer>
+      </section>
+
+      <aside class="control-column" aria-label="Diagram data and computation">
+        <section class="control-card" aria-labelledby="setup-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Algebra & diagram</p>
+              <h2 id="setup-heading">Setup</h2>
+            </div>
+            <span class="status-pill" id="model-status">Draft</span>
+          </div>
+
+          <div class="field-grid two-columns">
+            <label class="field field-wide" for="diagram-name">
+              <span>Name</span>
+              <input id="diagram-name" type="text" value="Untitled Heegaard diagram" autocomplete="off">
+            </label>
+            <label class="field" for="ell-input">
+              <span>Odd level &ell;</span>
+              <input id="ell-input" type="number" min="3" max="101" step="2" value="3" inputmode="numeric">
+              <small>Odd, 3–101 in the browser</small>
+            </label>
+            <label class="field" for="root-power-input">
+              <span>Root power</span>
+              <input id="root-power-input" type="number" step="1" value="1" inputmode="numeric">
+              <small>q = &zeta;<sup>power</sup></small>
+            </label>
+            <label class="field" for="genus-input">
+              <span>Genus g</span>
+              <input id="genus-input" type="number" min="1" max="12" step="1" value="1" inputmode="numeric">
+              <small>Requires g curves of each color</small>
+            </label>
+            <label class="field" for="reference-input">
+              <span>Reference combing</span>
+              <input id="reference-input" type="text" value="diagram framing" autocomplete="off">
+              <small>Coordinates are differences</small>
+            </label>
+          </div>
+          <details class="lens-generator" id="lens-generator">
+            <summary>Generate a lens-space diagram</summary>
+            <div class="lens-generator-grid">
+              <label class="field" for="lens-n">
+                <span>L(n, k): n</span>
+                <input id="lens-n" type="number" min="1" max="4096" step="1" value="7" inputmode="numeric">
+              </label>
+              <label class="field" for="lens-k">
+                <span>k</span>
+                <input id="lens-k" type="number" min="1" max="4095" step="1" value="1" inputmode="numeric">
+              </label>
+              <label class="field" for="lens-framing">
+                <span>Framing</span>
+                <select id="lens-framing">
+                  <option value="auto">Automatic</option>
+                  <option value="fL">fL</option>
+                  <option value="fR">fR</option>
+                </select>
+              </label>
+              <button class="button button-secondary" id="generate-lens" type="button">Generate L(n, k)</button>
+            </div>
+          </details>
+        </section>
+
+        <section class="control-card" aria-labelledby="combing-heading">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Global data</p>
+              <h2 id="combing-heading">Combing coordinates <span class="muted">(4g)</span></h2>
+            </div>
+            <span class="data-count" id="combing-count">4 numbers</span>
+          </div>
+          <div class="combing-wrap">
+            <table class="combing-table">
+              <thead id="combing-head"></thead>
+              <tbody id="combing-body"></tbody>
+            </table>
+          </div>
+          <p class="callout callout-caution">
+            <strong>Important.</strong> The 4g coordinates record the global combing relative to a reference. They do not determine crossing order, &theta;<sub>2</sub>, or the local S<sup>s</sup>T<sup>t</sup> labels. Supply those below or load a certified template.
+          </p>
+        </section>
+
+        <section class="control-card inspector-card" aria-labelledby="inspector-heading">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Local data</p>
+              <h2 id="inspector-heading">Inspector</h2>
+            </div>
+            <span class="selection-badge" id="selection-badge">Nothing selected</span>
+          </div>
+          <div id="inspector-empty" class="inspector-empty">
+            Select a curve or amber crossing in the diagram to assign its local label.
+          </div>
+          <div id="curve-inspector" hidden>
+            <div class="inspector-title">
+              <span class="curve-chip" id="curve-chip"></span>
+              <strong id="curve-id-label"></strong>
+            </div>
+            <label class="field" for="curve-theta2">
+              <span>&theta;<sub>2</sub> (twice the half-rotation)</span>
+              <input id="curve-theta2" type="number" step="2" value="1" inputmode="numeric">
+              <small>Must be an odd integer; orientation and basepoint set the crossing order.</small>
+            </label>
+            <p class="order-preview"><span>Based order</span><code id="curve-order">—</code></p>
+          </div>
+          <div id="crossing-inspector" hidden>
+            <div class="inspector-title">
+              <span class="crossing-chip" aria-hidden="true"></span>
+              <strong id="crossing-id-label"></strong>
+            </div>
+            <p class="incident-curves" id="incident-curves"></p>
+            <div class="field-grid two-columns">
+              <label class="field" for="antipode-power">
+                <span>Antipode power s</span>
+                <input id="antipode-power" type="number" step="1" value="0" inputmode="numeric">
+              </label>
+              <label class="field" for="tilt-power">
+                <span>Tilt power t</span>
+                <input id="tilt-power" type="number" step="1" value="0" inputmode="numeric">
+                <small>T is identity for T<sub>&ell;</sub></small>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="control-card compute-card" aria-labelledby="compute-heading">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Exact contraction</p>
+              <h2 id="compute-heading">Compute</h2>
+            </div>
+            <button class="button button-quiet button-small" id="validate-button" type="button">Validate</button>
+          </div>
+          <label class="certification" for="certified-input">
+            <input id="certified-input" type="checkbox">
+            <span>
+              <strong>I certify the local labels</strong>
+              <small>The explicit orders and S<sup>s</sup>T<sup>t</sup> powers encode this pictured diagram and combing.</small>
+            </span>
+          </label>
+          <div class="validation-box" id="validation-box" role="status" aria-live="polite">
+            Add one lower and one upper curve to validate.
+          </div>
+          <button class="button button-primary compute-button" id="compute-button" type="button">
+            <span>Compute Kuperberg invariant</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+        </section>
+
+        <section class="control-card result-card" id="result-card" aria-labelledby="result-heading" hidden>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Result in ℤ[&zeta;]</p>
+              <h2 id="result-heading">Invariant</h2>
+            </div>
+            <button class="button button-quiet button-small" id="copy-result" type="button">Copy exact</button>
+          </div>
+          <output class="exact-result" id="exact-result">0</output>
+          <p class="root-description" id="root-description"></p>
+          <dl class="result-stats">
+            <div><dt>Approximation</dt><dd id="approx-result">—</dd></div>
+            <div><dt>States evaluated</dt><dd id="states-result">—</dd></div>
+            <div><dt>Estimated work</dt><dd id="work-result">—</dd></div>
+          </dl>
+          <details>
+            <summary>Cyclotomic coefficients</summary>
+            <pre id="coefficient-result"></pre>
+          </details>
+        </section>
+
+        <section class="control-card io-card" aria-labelledby="io-heading">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Portable input</p>
+              <h2 id="io-heading">Compiled JSON</h2>
+            </div>
+          </div>
+          <p>Import a schema-v1 contraction or export the current crossing orders and labels for the Python CLI.</p>
+          <div class="io-actions">
+            <button class="button button-secondary" id="import-button" type="button">Import JSON</button>
+            <button class="button button-secondary" id="export-button" type="button">Export JSON</button>
+            <input id="file-input" type="file" accept="application/json,.json" hidden>
+          </div>
+          <p class="io-note" id="io-note"></p>
+        </section>
+      </aside>
+    </main>
+
+    <section class="method" aria-labelledby="method-heading">
+      <div>
+        <p class="eyebrow">What the page computes</p>
+        <h2 id="method-heading">Picture → decorated contraction → exact cyclotomic value</h2>
+      </div>
+      <ol>
+        <li><b>1</b><span>Draw based, oriented lower and upper curves. Intersections are detected automatically.</span></li>
+        <li><b>2</b><span>Enter the 4g global coordinates and every local &theta;<sub>2</sub>, s, and t label.</span></li>
+        <li><b>3</b><span>The evaluator expands the Taft integral, follows each based crossing order, and contracts against cointegrals.</span></li>
+      </ol>
+      <p id="template-note" class="method-note">Verified templates contain labels transcribed from the package’s tested conventions. Illustrative templates are starting geometries only and still require certification.</p>
+    </section>
+
+    <footer class="site-footer">
+      <span>Exact arithmetic · odd Taft algebra T<sub>&ell;</sub></span>
+      <a href="https://github.com/Enyu2023/Enyu2023.github.io/blob/main/kuperberg-taft/GUIDE.md">Method, conventions, and CLI guide</a>
+    </footer>
+
+    <div class="sr-only" id="live-region" aria-live="polite"></div>
+  </body>
+</html>

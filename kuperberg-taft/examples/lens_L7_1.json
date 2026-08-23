@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "convention": "cnw-2025-corrected-right-cointegral",
+  "local_labels_certified": true,
+  "name": "L(7,1), Chang-Ng-Wang fL framing",
+  "genus": 1,
+  "combing": {
+    "kind": "difference_to_reference",
+    "reference": "Chang-Ng-Wang L(7,1) fL",
+    "alpha": [0],
+    "beta": [0],
+    "nu": [0],
+    "mu": [0]
+  },
+  "lower": [
+    {"id": "eta1", "theta2": 1, "crossings": ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]}
+  ],
+  "upper": [
+    {"id": "mu1", "theta2": -1, "crossings": ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]}
+  ],
+  "crossings": [
+    {"id": "p1", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p2", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p3", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p4", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p5", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p6", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p7", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0}
+  ]
+}

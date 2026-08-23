@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "convention": "cnw-2025-corrected-right-cointegral",
+  "local_labels_certified": true,
+  "name": "T^3, Chang-Wang-Zhai Figure 3 framing f1",
+  "genus": 3,
+  "combing": {
+    "kind": "difference_to_reference",
+    "reference": "Chang-Wang-Zhai Figure 3 framing f1",
+    "alpha": [0, 0, 0],
+    "beta": [0, 0, 0],
+    "nu": [0, 0, 0],
+    "mu": [0, 0, 0]
+  },
+  "lower": [
+    {"id": "eta1", "theta2": 1, "crossings": ["p1", "p2", "p3", "p4"]},
+    {"id": "eta2", "theta2": 1, "crossings": ["q1", "q2", "q3", "q4"]},
+    {"id": "eta3", "theta2": 1, "crossings": ["r1", "r2", "r3", "r4"]}
+  ],
+  "upper": [
+    {"id": "mu1", "theta2": -1, "crossings": ["p1", "r4", "p3", "r2"]},
+    {"id": "mu2", "theta2": -1, "crossings": ["q1", "p2", "q3", "p4"]},
+    {"id": "mu3", "theta2": -1, "crossings": ["r1", "q2", "r3", "q4"]}
+  ],
+  "crossings": [
+    {"id": "p1", "lower": "eta1", "upper": "mu1", "antipode_power": 1, "tilt_power": 0},
+    {"id": "p2", "lower": "eta1", "upper": "mu2", "antipode_power": 2, "tilt_power": 0},
+    {"id": "p3", "lower": "eta1", "upper": "mu1", "antipode_power": 2, "tilt_power": 0},
+    {"id": "p4", "lower": "eta1", "upper": "mu2", "antipode_power": 1, "tilt_power": 0},
+    {"id": "q1", "lower": "eta2", "upper": "mu2", "antipode_power": 1, "tilt_power": 0},
+    {"id": "q2", "lower": "eta2", "upper": "mu3", "antipode_power": 1, "tilt_power": 0},
+    {"id": "q3", "lower": "eta2", "upper": "mu2", "antipode_power": 2, "tilt_power": 0},
+    {"id": "q4", "lower": "eta2", "upper": "mu3", "antipode_power": 2, "tilt_power": 0},
+    {"id": "r1", "lower": "eta3", "upper": "mu3", "antipode_power": 1, "tilt_power": 0},
+    {"id": "r2", "lower": "eta3", "upper": "mu1", "antipode_power": 3, "tilt_power": 0},
+    {"id": "r3", "lower": "eta3", "upper": "mu3", "antipode_power": 2, "tilt_power": 0},
+    {"id": "r4", "lower": "eta3", "upper": "mu1", "antipode_power": 2, "tilt_power": 0}
+  ]
+}

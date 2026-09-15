@@ -17,6 +17,7 @@ layout: academic
     <p>{{ profile.introduction | escape }}</p>
     <ul class="inline-links" aria-label="Profile links">
       <li><a href="mailto:{{ site.email | escape }}">Email</a></li>
+      {% if site.math_stackexchange_url %}<li><a href="{{ site.math_stackexchange_url | escape }}">Math Stack Exchange</a></li>{% endif %}
       {% if site.zhihu_username %}<li><a href="https://www.zhihu.com/people/{{ site.zhihu_username | escape }}">Zhihu</a></li>{% endif %}
     </ul>
   </div>

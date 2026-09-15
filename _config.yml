@@ -29,7 +29,7 @@ facebook_username:
 twitter_username: 
 instagram_username: 
 linkedin_username: 
-github_username:  enyu2023
+github_username:
 youtube_channel_id: 
 reddit_username: 
 behance_username: 
@@ -50,7 +50,7 @@ author-image: /assets/images/enyu-li-portrait.jpg
 # 60 Words About the Author
 author-about: I'm a graduate student at Tsinghua University. I graduated from Beijing Normal University in 2024.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/enyu2023
+author-url: /
 
 # SASS
 sass:

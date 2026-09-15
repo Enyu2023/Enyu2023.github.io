@@ -7,4 +7,4 @@ pdf: /assets/notes/optimization-on-manifolds.pdf
 
 Learning notes on optimization in linear spaces and on smooth manifolds. Topics include convex duality, optimality conditions, gradient descent, Newton and quasi-Newton methods, trust-region methods, and Riemannian gradient descent with retractions and line search.
 
-These notes are a work in progress. The [GitHub repository](https://github.com/Enyu2023/optnotes) contains the source and the [latest PDF](https://github.com/Enyu2023/optnotes/blob/main/opt.pdf).
+These notes are a work in progress.

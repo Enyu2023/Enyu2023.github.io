@@ -55,7 +55,6 @@ p { margin: 0 0 1rem; }
 .note-download { font-size: .875rem; margin-left: .4rem; white-space: nowrap; }
 time { color: var(--muted); white-space: nowrap; }
 .muted { color: var(--muted); font-size: .95rem; }
-.contact-section { padding-bottom: 36px; }
 .contact-links { list-style: none; padding: 0; margin: 0; }
 .contact-links li + li { margin-top: .3rem; }
 .site-footer { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 20px; padding: 22px 0 30px; border-top: 1px solid var(--rule); color: var(--muted); }

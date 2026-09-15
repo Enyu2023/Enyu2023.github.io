@@ -42,10 +42,9 @@ labs remain available.
 
 The Photography page is at `/photography/`. Put web-sized copies of your photographs
 in `assets/photography/`, and list them in `_data/photography.yml` in display order.
-Replace `photos: []` with a list, following this commented example:
+Add entries to the existing `photos` list, following this example:
 
 ```yaml
-intro: Milky Way, night skies, and other photographs.
 photos:
   # - image: /assets/photography/your-photo.jpg
   #   alt: A brief description of what appears in the photograph.
@@ -64,6 +63,9 @@ omit unknown dates and locations. Use the web copy's actual pixel dimensions for
 spans the gallery's columns. Clicking a photograph opens `full_image`, or `image`
 when no larger copy is supplied. Remove embedded GPS coordinates from web copies
 if you do not want to share the precise shooting location.
+
+The optional `quote` above the photo list has `text`, `attribution`, and `source`
+fields. Keep the attribution and source link with the quotation.
 
 ## Blog style
 

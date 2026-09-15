@@ -2,11 +2,17 @@
 layout: academic
 title: Photography
 permalink: /photography/
-description: Milky Way, night skies, and other photographs.
+description: Astrophotography by Enyu Li.
 ---
 <header class="page-heading">
   <h1>Photography</h1>
-  {% if site.data.photography.intro and site.data.photography.intro != '' %}<p>{{ site.data.photography.intro | escape }}</p>{% endif %}
+  {% assign quote = site.data.photography.quote %}
+  {% if quote.text %}
+    <figure class="photography-quote">
+      <blockquote cite="{{ quote.source | escape }}"><p>“{{ quote.text | escape }}”</p></blockquote>
+      <figcaption>— <a href="{{ quote.source | escape }}">{{ quote.attribution | escape }}</a></figcaption>
+    </figure>
+  {% endif %}
 </header>
 {% assign photos = site.data.photography.photos %}
 {% if photos.size > 0 %}

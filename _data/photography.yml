@@ -1,2 +1,73 @@
-intro: Milky Way, night skies, and other photographs.
-photos: []
+quote:
+  text: "400 years ago, … everyone could see the stars, but only Galileo had a telescope. Now, everybody has a telescope, but nobody can see the stars."
+  attribution: "An astronomer in Florence, quoted by Paul Bogard"
+  source: "https://www.theatlantic.com/technology/archive/2013/07/let-there-be-night/278070/"
+photos:
+  - image: "/assets/photography/ulanqab-night.jpg"
+    full_image: "/assets/photography/ulanqab-night-large.jpg"
+    alt: "A car on a dark plain beneath the Milky Way, with a pale glow along the horizon."
+    title: "Milky Way"
+    width: 1800
+    height: 1198
+    location: "Ulanqab"
+    featured: true
+  - image: "/assets/photography/ulanqab-milky-way.jpg"
+    full_image: "/assets/photography/ulanqab-milky-way-large.jpg"
+    alt: "The Milky Way rising above a car on an open grassland."
+    title: "Milky Way"
+    width: 798
+    height: 1200
+    location: "Ulanqab"
+  - image: "/assets/photography/milky-way-mountains.jpg"
+    full_image: "/assets/photography/milky-way-mountains-large.jpg"
+    alt: "A dense band of stars above a mountain ridge, with a railing in the foreground."
+    title: "Milky Way above the mountains"
+    width: 927
+    height: 1200
+  - image: "/assets/photography/star-field.jpg"
+    full_image: "/assets/photography/star-field-large.jpg"
+    alt: "Dense stars and the band of the Milky Way above silhouetted branches."
+    title: "Star field"
+    width: 1200
+    height: 798
+  - image: "/assets/photography/ulanqab-stargazing.jpg"
+    full_image: "/assets/photography/ulanqab-stargazing-large.jpg"
+    alt: "Four people facing the Milky Way beside a parked car."
+    title: "Under the Milky Way"
+    width: 1200
+    height: 798
+    location: "Ulanqab"
+  - image: "/assets/photography/night-sky-streak-2.jpg"
+    full_image: "/assets/photography/night-sky-streak-2-large.jpg"
+    alt: "A diagonal meteor crossing a dark star field above branches."
+    title: "Geminids I"
+    width: 1200
+    height: 799
+    date: "14 December 2025"
+  - image: "/assets/photography/night-sky-streak-1.jpg"
+    full_image: "/assets/photography/night-sky-streak-1-large.jpg"
+    alt: "A bright meteor beneath a star-filled sky, with branches at the lower right."
+    title: "Geminids II"
+    width: 1200
+    height: 927
+    date: "14 December 2025"
+  - image: "/assets/photography/night-sky-streak-3.jpg"
+    full_image: "/assets/photography/night-sky-streak-3-large.jpg"
+    alt: "A short bright meteor above a wide field of stars, with Orion toward the lower right."
+    title: "Geminids III"
+    width: 1200
+    height: 798
+    date: "14 December 2025"
+  - image: "/assets/photography/ulanqab-under-the-stars.jpg"
+    full_image: "/assets/photography/ulanqab-under-the-stars-large.jpg"
+    alt: "Four people posing beside a car beneath the Milky Way."
+    title: "Under the stars"
+    width: 1200
+    height: 798
+    location: "Ulanqab"
+  - image: "/assets/photography/stargazing-mountains.jpg"
+    full_image: "/assets/photography/stargazing-mountains-large.jpg"
+    alt: "Five people and camera tripods beneath the stars beside a mountain ridge."
+    title: "Stargazing"
+    width: 1200
+    height: 798

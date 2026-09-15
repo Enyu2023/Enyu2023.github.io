@@ -11,14 +11,6 @@ photos:
     location: "Ulanqab"
     date: "July 2026"
     featured: true
-  - image: "/assets/photography/ulanqab-milky-way.jpg"
-    full_image: "/assets/photography/ulanqab-milky-way-large.jpg"
-    alt: "The Milky Way rising above a car on an open grassland."
-    title: "Milky Way"
-    width: 798
-    height: 1200
-    location: "Ulanqab"
-    date: "July 2026"
   - image: "/assets/photography/chifeng-milky-way.jpg"
     full_image: "/assets/photography/chifeng-milky-way-large.jpg"
     alt: "A person silhouetted at a wooden railing beneath the Milky Way."

@@ -82,7 +82,7 @@ time { color: var(--muted); white-space: nowrap; }
 .MathJax_Display { overflow-x: auto; overflow-y: hidden; }
 
 /* Photography keeps each image's original composition. */
-.photography-introduction p { max-width: none; }
+.photography-introduction p { max-width: none; text-align: justify; }
 .photography-quote { max-width: 42em; margin: 1.4rem 0 .6rem; }
 .photography-quote blockquote { margin: 0; font-style: italic; }
 .photography-quote blockquote p { margin-bottom: .6rem; }

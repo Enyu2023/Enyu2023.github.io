@@ -2,6 +2,8 @@
 
 # URL of the Site
 url: 'https://enyu2023.github.io'
+# Google Search Console URL-prefix ownership verification.
+google_site_verification: '14Pa48JseRJ_Al2PqAZ_AWXk5uIMF0QgilMIrc3DcSs'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
 

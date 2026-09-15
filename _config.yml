@@ -7,6 +7,8 @@ baseurl:
 
 # Title of the Site
 title: Enyu Li
+# Keep publication dates in the author's local time on GitHub Pages.
+timezone: Asia/Shanghai
 # Description of the Site
 description: Enyu Li's research interests and notes in low-dimensional topology.
 # URL of Image of the Site

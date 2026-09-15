@@ -18,14 +18,18 @@ Create a Markdown file such as `_notes/reading-note.md` with this front matter:
 ---
 title: A reading note
 date: 2026-09-15
-description: A short summary of the note.
+abstract: |
+  Write your own abstract here. This can span
+  several lines and supports **Markdown**.
 # Optional: add a PDF under assets/notes/ and link it here.
 # pdf: /assets/notes/reading-note.pdf
 ---
 ```
 
-Write the note below the front matter. It appears automatically at `/notes/reading-note/`,
-in the Notes index, and on the homepage. If only the month is known, add
+The abstract appears below the note on the homepage and in the Notes index, and on
+the individual note page at `/notes/reading-note/`. Edit `abstract` in the existing
+`_notes/*.md` files to add your own text. Leave `abstract: ""` to show no abstract.
+You can write additional content below the front matter. If only the month is known, add
 `date_precision: month` to display the month and year without a day. Use
 `date_precision: none` for undated notes. Notes support Markdown
 and mathematical notation (use Kramdown's `$$...$$` inline, or on a separate line for

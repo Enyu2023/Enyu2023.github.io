@@ -46,6 +46,7 @@ layout: academic
             <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
             {% if note.pdf %}<a class="note-download" href="{{ note.pdf | relative_url }}" aria-label="Download {{ note.title | escape }} as PDF">[PDF]</a>{% endif %}
             {% if note.description %}<p class="muted entry-description">{{ note.description | escape }}</p>{% endif %}
+            {% if note.abstract and note.abstract != '' %}<div class="note-abstract">{{ note.abstract | markdownify }}</div>{% endif %}
           </div>
           {% if note.date and note.date_precision != 'none' %}<time datetime="{% if note.date_precision == 'month' %}{{ note.date | date: '%Y-%m' }}{% else %}{{ note.date | date: '%Y-%m-%d' }}{% endif %}">{{ note.date | date: '%b %Y' }}</time>{% endif %}
         </li>

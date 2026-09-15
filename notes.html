@@ -19,6 +19,7 @@ description: Reading notes and mathematical write-ups by Enyu Li.
         <h2><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a></h2>
         {% if note.date and note.date_precision != 'none' %}{% if note.date_precision == 'month' %}<time datetime="{{ note.date | date: '%Y-%m' }}">{{ note.date | date: '%B %Y' }}</time>{% else %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%d %B %Y' }}</time>{% endif %}{% endif %}
         {% if note.description %}<p>{{ note.description | escape }}</p>{% endif %}
+        {% if note.abstract and note.abstract != '' %}<div class="note-abstract">{{ note.abstract | markdownify }}</div>{% endif %}
         {% if note.pdf %}<a class="pdf-link" href="{{ note.pdf | relative_url }}">Download PDF</a>{% endif %}
       </li>
     {% endfor %}

@@ -9,5 +9,8 @@ layout: academic
     {% if page.description %}<p>{{ page.description | escape }}</p>{% endif %}
     {% if page.pdf %}<p><a href="{{ page.pdf | relative_url }}">Download PDF</a></p>{% endif %}
   </header>
-  <div class="note-content">{{ content }}</div>
+  <div class="note-content">
+    {% if page.abstract and page.abstract != '' %}<div class="note-abstract">{{ page.abstract | markdownify }}</div>{% endif %}
+    {{ content }}
+  </div>
 </article>

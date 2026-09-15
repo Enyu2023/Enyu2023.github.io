@@ -259,8 +259,6 @@ $$
 
 For a weight system $$W\in\mathcal W_n$$, extend $$W$$ by zero on degrees other than $$n$$. Then $$W\circ Z$$ has type at most $$n$$ and symbol $$W$$. Conversely, any invariant of type at most $$n$$ factors through the truncation of $$Z$$ to degrees $$0,\ldots,n$$. To see this, integrate its top symbol, subtract, and repeat in lower degrees.
 
-Chapter 2 sets up this theorem and proves the elementary direction. The constructions that prove the integration direction, using the Kontsevich integral and configuration space integrals, belong to the later chapters of the thesis.
-
 ### The first few degrees
 
 The diagram description explains the small-degree calculation:
@@ -281,7 +279,7 @@ Every invariant of type at most two is a linear combination of the constant inva
 
 ## 7. How the algebra fits together
 
-Chapter 2 also keeps track of products, rather than treating each degree separately. On knots the product is connected sum, and on chord diagrams it is the analogous operation of cutting and joining the circles. The 4T relation makes the product of chord diagrams independent of the cutting points.
+On knots the product is connected sum, and on chord diagrams it is the analogous operation of cutting and joining the circles. The 4T relation makes the product of chord diagrams independent of the cutting points.
 
 A diagram can also be split by dividing its chord set $$I$$ between two factors:
 
@@ -299,11 +297,11 @@ $$
 
 It is not pointwise multiplication on individual diagrams. It is the operation corresponding to multiplying finite type invariants and taking their leading terms.
 
-For braids, the chapter introduces horizontal chord diagrams on several vertical strands, multiplied by stacking. Their infinitesimal braid relations provide another setting in which the same diagrammatic calculus works.
+For braids, horizontal chord diagrams on several vertical strands are multiplied by stacking. Their infinitesimal braid relations provide another setting in which the same diagrammatic calculus works.
 
 ## 8. Why trivalent diagrams appear next
 
-A final change of language in Chapter 2 makes the connection with Lie algebras visible. Replace ordinary chords by graphs with univalent and trivalent vertices. The univalent vertices lie on the circle; each trivalent vertex has a cyclic order on its three incident edges. Every connected component of the graph is required to meet the circle. These are **Jacobi diagrams**, with degree equal to half the total number of graph vertices.
+To make the connection with Lie algebras visible, replace ordinary chords by graphs with univalent and trivalent vertices. The univalent vertices lie on the circle; each trivalent vertex has a cyclic order on its three incident edges. Every connected component of the graph is required to meet the circle. These are **Jacobi diagrams**, with degree equal to half the total number of graph vertices.
 
 The **STU relation**, schematically $$S=T-U$$, resolves a trivalent vertex next to the circle into the difference of two ways of ordering adjacent attachments. Repeating this resolution expresses a Jacobi diagram as a combination of chord diagrams. The 4T relation ensures that the result does not depend on the order of resolution. This is the bracket-rise theorem:
 
@@ -320,9 +318,5 @@ STU also implies antisymmetry at a trivalent vertex and the IHX relation. These 
 This produces framed weight systems; passing to unframed invariants requires accounting for 1T. The distinction is worth keeping in mind when moving between knot-theoretic and Lie-theoretic constructions.
 
 That is the route from knots to Lie algebras: crossing changes lead to derivatives, top derivatives lead to diagrams, and the relations between diagrams have the form of familiar algebraic identities.
-
-## Further reading
-
-The detailed arguments and diagrammatic proofs are in [Chapter 2 of my undergraduate thesis]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}#page=17), especially §§2.2–2.4. Chapters 3 and 4 construct universal finite type invariants and prove the integration direction of the fundamental theorem.
 
 **Next:** [Knots and Lie Algebras: Why Are They Related?]({{ '/blog/math/Knots-and-Lie-Algebras' | relative_url }})

@@ -38,6 +38,12 @@ for tables). Keep using
 `_posts/` for blog posts. The original blog, categories, tags, feed, and both mathematical
 labs remain available.
 
+## Blog style
+
+Posts should read as standalone mathematical articles. Do not add notices about
+adaptation from other platforms, screenshot sources, or correspondence to thesis
+chapters. Preserve original publication dates in the post metadata.
+
 ---
 
 # Original theme: WhatATheme

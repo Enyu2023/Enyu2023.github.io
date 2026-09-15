@@ -237,7 +237,6 @@ The striking point is already visible before these deeper questions: the local i
 
 ## References
 
-- [My undergraduate thesis, Finite Type Invariants of Knots]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}), 2024.
 - Tomotada Ohtsuki, *Quantum Invariants: A Study of Knots, 3-Manifolds, and Their Sets*, World Scientific, 2002, especially Chapter 8.
 - Dror Bar-Natan, [On the Vassiliev Knot Invariants](https://www.math.utoronto.ca/drorbn/papers/OnVassiliev/index.html), *Topology* **34** (1995), 423–472.
 - Greg Kuperberg, [Detecting Knot Invertibility](https://arxiv.org/abs/q-alg/9712048), *Journal of Knot Theory and Its Ramifications* **5** (1996), 173–181.

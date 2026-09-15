@@ -37,3 +37,19 @@ description: Astrophotography by Enyu Li.
 {% else %}
   <p class="photography-empty">Photographs coming soon.</p>
 {% endif %}
+{% assign lunar_eclipse = site.data.lunar_eclipse %}
+{% if lunar_eclipse.photos.size > 0 %}
+  <figure class="lunar-eclipse-series">
+    <div class="lunar-eclipse-grid">
+      {% for photo in lunar_eclipse.photos %}
+        <a href="{{ photo.image | relative_url }}" aria-label="View lunar eclipse photograph {{ forloop.index }}">
+          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+        </a>
+      {% endfor %}
+    </div>
+    <figcaption class="photography-caption">
+      <h2>{{ lunar_eclipse.title | escape }}</h2>
+      {% if lunar_eclipse.date %}<p class="photography-details">{{ lunar_eclipse.date | escape }}</p>{% endif %}
+    </figcaption>
+  </figure>
+{% endif %}

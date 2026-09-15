@@ -99,6 +99,10 @@ time { color: var(--muted); white-space: nowrap; }
 .photography-caption h2 { margin: 0 0 .25rem; font-size: 1.15rem; }
 .photography-details { margin: 0; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .875rem; }
 .photography-empty { margin: 0 0 60px; color: var(--muted); }
+.lunar-eclipse-series { margin: 0 0 50px; }
+.lunar-eclipse-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 14px; }
+.lunar-eclipse-grid a, .lunar-eclipse-grid img { display: block; }
+.lunar-eclipse-grid img { width: 100%; height: auto; }
 
 @media (max-width: 620px) {
   .site-shell { padding: 0 22px; }
@@ -113,6 +117,7 @@ time { color: var(--muted); white-space: nowrap; }
   .research-tools a { display: inline; }
   .site-footer { padding-bottom: 24px; }
   .photography-gallery { grid-template-columns: 1fr; gap: 30px; }
+  .lunar-eclipse-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 }
 
 @media print {

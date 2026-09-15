@@ -14,6 +14,8 @@ related_note: /notes/finite-type-invariants/
 
 *Adapted from [my Zhihu answer](https://www.zhihu.com/question/293415543/answer/75742755445), first published on 10 January 2025.*
 
+*The illustrations are screenshots from my [undergraduate thesis]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}).*
+
 **Previous:** [What is a finite type invariant?]({{ '/blog/math/What-Is-Finite-Type-Invariants' | relative_url }})
 
 A knot can look like a tangled piece of string. A Lie algebra, by contrast, is a vector space with a bilinear operation satisfying a few precise identities. Why should one tell us anything about the other?
@@ -30,15 +32,15 @@ $$
 
 The three knots agree outside a small ball; inside it, they have a double point, a positive crossing, or a negative crossing.
 
-![The Vassiliev skein relation: a double point is evaluated as a positive crossing minus a negative crossing.]({{ '/assets/images/knots-and-lie-algebras/skein.jpg' | relative_url }})
+![The Vassiliev skein relation: a double point is evaluated as a positive crossing minus a negative crossing.]({{ '/assets/images/knots-and-lie-algebras/skein.png' | relative_url }})
 
-The crossing convention is illustrated here:
+The crossing convention is illustrated by the writhe formula below: positive crossings contribute +1 and negative crossings contribute −1.
 
-![Positive and negative oriented crossings.]({{ '/assets/images/knots-and-lie-algebras/crossing-signs.jpg' | relative_url }})
+![The writhe is the number of positive crossings minus the number of negative crossings.]({{ '/assets/images/knots-and-lie-algebras/crossing-signs.png' | relative_url }})
 
 This difference plays the role of a derivative. Repeating it extends $$v$$ to singular knots with any number of transverse double points. The order in which we resolve the double points does not matter.
 
-![Two examples of singular knots with two double points.]({{ '/assets/images/knots-and-lie-algebras/singular-knot.jpg' | relative_url }})
+![Two examples of singular knots with two double points.]({{ '/assets/images/knots-and-lie-algebras/singular-knot.png' | relative_url }})
 
 An invariant is of **type at most $$n$$** if its extension vanishes on every singular knot with $$n+1$$ double points. Explicitly, if the double points of $$K$$ are numbered from $$1$$ to $$n+1$$, then
 
@@ -62,9 +64,7 @@ There is no topology or convergence statement built into this question. The imme
 
 An $$n$$-singular knot determines a **chord diagram**. Travel once around its oriented parameter circle and mark the two preimages of each double point. Join each such pair by a chord. The circle is often called the *skeleton* or *Wilson loop*.
 
-![A chord diagram with its oriented circle, vertices, and chords labelled.]({{ '/assets/images/knots-and-lie-algebras/chord-diagrams.jpg' | relative_url }})
-
-![Examples of the passage from singular knots to chord diagrams.]({{ '/assets/images/knots-and-lie-algebras/knot-to-chord.jpg' | relative_url }})
+![Five degree-three chord diagrams, with solid oriented circles and dashed chords.]({{ '/assets/images/knots-and-lie-algebras/chord-diagrams.png' | relative_url }})
 
 The diagram forgets much of the embedding in three-dimensional space. Why is it sufficient for a finite type invariant?
 
@@ -78,11 +78,11 @@ Any two realizations of the same chord diagram can be connected by isotopies and
 
 These functions are constrained by local relations. The **four-term relation**, or **4T**, comes from moving strands past a double point and comparing the resulting crossing differences:
 
-![The four local chord diagrams in the four-term relation, with alternating signs.]({{ '/assets/images/knots-and-lie-algebras/four-term.jpg' | relative_url }})
+![The four local chord diagrams in the four-term relation, with alternating signs.]({{ '/assets/images/knots-and-lie-algebras/four-term.png' | relative_url }})
 
-For ordinary, unframed knots there is also **1T**: a diagram with a chord whose endpoints are adjacent on the skeleton has weight zero. This reflects the first Reidemeister move.
+For ordinary, unframed knots there is also **1T**: a diagram with a chord whose endpoints are adjacent on the skeleton has weight zero. This reflects the first Reidemeister move. Together with 4T, it also kills any chord that does not interlace with the others, as illustrated below.
 
-![The one-term relation sets a diagram with an isolated chord equal to zero.]({{ '/assets/images/knots-and-lie-algebras/one-term.jpg' | relative_url }})
+![A noninterlacing chord corresponds to a singular knot whose two resolutions are isotopic, so their difference vanishes.]({{ '/assets/images/knots-and-lie-algebras/one-term.png' | relative_url }})
 
 Let $$\mathcal V_n$$ be the space of invariants of type at most $$n$$, and let $$\mathcal A_n$$ be the vector space spanned by degree-$$n$$ chord diagrams, modulo 4T and 1T. A **weight system** is a linear functional on this quotient. The precise map is
 
@@ -101,9 +101,9 @@ The difficult direction is the converse. Over a field of characteristic zero, th
 
 Kontsevich proved this by constructing a universal invariant with values in a completed space of diagrams. Its integral formula already hints at how much geometry is involved:
 
-![Kontsevich's integral as a sum over pairings and ordered heights, integrating products of logarithmic differentials.]({{ '/assets/images/knots-and-lie-algebras/kontsevich-integral.jpg' | relative_url }})
+![Kontsevich's integral as a sum over pairings and ordered heights, integrating products of logarithmic differentials.]({{ '/assets/images/knots-and-lie-algebras/kontsevich-integral.png' | relative_url }})
 
-*The integral formula reproduced in the original answer; see Ohtsuki, Chapter 8, for its definitions and normalization.*
+*Equation (3.42) from Section 3.2.1 of my thesis, written for a Morse tangle $$T$$ as $$I(T)$$. The knot invariant $$Z$$ is obtained after normalization.*
 
 Very roughly, choose a height function on a knot, pair points lying at the same height, and attach a chord to each pair. Integrating products of logarithmic differentials over ordered heights produces diagram-valued coefficients. A suitable normalization gives the knot invariant usually denoted by $$Z$$.
 
@@ -115,24 +115,24 @@ Universality means that every finite type invariant can be recovered by a linear
 
 Chord diagrams can be enlarged to **Jacobi diagrams**. Keep the oriented skeleton, but allow the graph attached to it to have internal trivalent vertices. Its univalent vertices lie on the skeleton, and each trivalent vertex carries a cyclic ordering of its three incident half-edges. We require every connected component of the attached graph to meet the skeleton. We draw the skeleton with solid lines and the attached graph with dashed lines. The degree is half the total number of univalent and trivalent vertices of the dashed graph; for a chord diagram, this is its number of chords.
 
-![Examples of Jacobi diagrams on a circle.]({{ '/assets/images/knots-and-lie-algebras/jacobi-diagrams.jpg' | relative_url }})
+![Three Jacobi diagrams from the thesis, labelled Primitive, Prime, and Not Prime.]({{ '/assets/images/knots-and-lie-algebras/jacobi-diagrams.png' | relative_url }})
 
 The key relation near the skeleton is **STU**:
 
-![The STU relation: a trivalent vertex meeting the skeleton equals the difference of the two orders of attachment.]({{ '/assets/images/knots-and-lie-algebras/stu.jpg' | relative_url }})
+![The STU relation: a trivalent vertex meeting the skeleton equals the difference of the two orders of attachment.]({{ '/assets/images/knots-and-lie-algebras/stu.png' | relative_url }})
 
 It replaces a bracket-shaped vertex next to the skeleton by a difference between two orders of attachment. Repeatedly applying it expresses Jacobi diagrams as combinations of chord diagrams. Applying it in two ways also produces 4T:
 
-![Applying STU twice gives the four-term relation.]({{ '/assets/images/knots-and-lie-algebras/stu-to-four-term.jpg' | relative_url }})
+![Applying STU twice gives the four-term relation.]({{ '/assets/images/knots-and-lie-algebras/stu-to-four-term.png' | relative_url }})
 
 Two more familiar-looking relations appear at internal vertices:
 
 - **AS:** reversing the cyclic order at a trivalent vertex changes the sign.
 - **IHX:** three local ways to connect four external half-edges satisfy an alternating relation.
 
-![Antisymmetry reverses a trivalent vertex's cyclic order and changes the sign.]({{ '/assets/images/knots-and-lie-algebras/antisymmetry.jpg' | relative_url }})
+![Antisymmetry reverses a trivalent vertex's cyclic order and changes the sign.]({{ '/assets/images/knots-and-lie-algebras/antisymmetry.png' | relative_url }})
 
-![The I, H, and X configurations in the IHX relation.]({{ '/assets/images/knots-and-lie-algebras/ihx.jpg' | relative_url }})
+![The I, H, and X configurations in the IHX relation.]({{ '/assets/images/knots-and-lie-algebras/ihx.png' | relative_url }})
 
 Jacobi diagrams on the skeleton, modulo AS, IHX, and STU, give the same diagram space as chord diagrams modulo 4T. For unframed knots, we impose the framing-independence relation as well. If instead we remove the skeleton and leave free legs, requiring every connected component to have at least one leg, AS and IHX define another presentation related by the diagrammatic PBW symmetrization map. This map averages over ways of attaching the legs to the circle. The unframed version is obtained by transporting the framing-independence quotient through this map.
 
@@ -158,15 +158,7 @@ $$
 \rho([x,y])=\rho(x)\rho(y)-\rho(y)\rho(x).
 $$
 
-Think of a trivalent vertex as a bracket with two inputs and one output. Reversing the inputs gives antisymmetry:
-
-![A bracket and the bracket with its inputs reversed, related by a minus sign.]({{ '/assets/images/knots-and-lie-algebras/lie-identities.jpg' | relative_url }})
-
-Composing two brackets gives the Jacobi identity in pictures:
-
-![Three compositions of brackets representing the Jacobi identity.]({{ '/assets/images/knots-and-lie-algebras/jacobi-identity.jpg' | relative_url }})
-
-This is precisely the shape of IHX. Likewise, the representation identity has the form of STU: a bracket acting on a vector equals the difference of the two possible orders of action.
+Think of a trivalent vertex as a bracket with two inputs and one output. Reversing the inputs gives antisymmetry, as in the AS diagram above. Composing two brackets gives the Jacobi identity, which has precisely the shape of the IHX diagram. Likewise, the representation identity has the form of STU: a bracket acting on a vector equals the difference of the two possible orders of action.
 
 | Diagram relation | Algebraic identity |
 | --- | --- |
@@ -192,8 +184,6 @@ f(x,y,z)=B([x,y],z),
 f\in(\mathfrak g^*)^{\otimes3}.
 $$
 
-![An internal trivalent vertex corresponds to the three-tensor f.]({{ '/assets/images/knots-and-lie-algebras/bracket-tensor.jpg' | relative_url }})
-
 The representation supplies the tensor attached to a vertex on the skeleton:
 
 $$
@@ -202,8 +192,6 @@ $$
 
 The orientation of the skeleton distinguishes the incoming and outgoing $$U$$-indices.
 
-![A vertex on the oriented skeleton corresponds to the representation tensor.]({{ '/assets/images/knots-and-lie-algebras/representation-tensor.jpg' | relative_url }})
-
 Now cut a diagram into these elementary pieces:
 
 1. Place $$f$$ at every internal trivalent vertex, using its cyclic ordering.
@@ -211,11 +199,9 @@ Now cut a diagram into these elementary pieces:
 3. Along each dashed edge, contract the two $$\mathfrak g^*$$-indices using the inverse form $$B^{-1}$$.
 4. Along the skeleton, contract the $$U$$- and $$U^*$$-indices. Closing the circle takes a trace.
 
-![Gluing graph edges corresponds to contracting their tensor indices.]({{ '/assets/images/knots-and-lie-algebras/contraction.jpg' | relative_url }})
-
 All indices are contracted, so the result is a scalar $$W_{\mathfrak g,B,\rho}(D)$$. For example, consider the diagram with one internal vertex and three legs attached to the circle:
 
-![A three-legged Jacobi diagram with Lie algebra labels a, b, c and representation indices i, j, k.]({{ '/assets/images/knots-and-lie-algebras/example-diagram.jpg' | relative_url }})
+![A Jacobi diagram with one internal trivalent vertex and three legs attached to the circle.]({{ '/assets/images/knots-and-lie-algebras/example-diagram.png' | relative_url }})
 
 Choose a $$B$$-orthonormal basis $$\{e_a\}$$ and put $$f_{abc}=B([e_a,e_b],e_c)$$. With compatible cyclic order and orientation conventions, its evaluation has the form
 
@@ -255,7 +241,7 @@ The striking point is already visible before these deeper questions: the local i
 
 ## References
 
-- [Original Zhihu answer](https://www.zhihu.com/question/293415543/answer/75742755445), 10 January 2025. The mathematical illustrations above are retained from that answer.
+- [My undergraduate thesis, Finite Type Invariants of Knots]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}), 2024. Source of the illustrations: Chapters 1–2 and equation (3.42).
 - Tomotada Ohtsuki, *Quantum Invariants: A Study of Knots, 3-Manifolds, and Their Sets*, World Scientific, 2002, especially Chapter 8.
 - Dror Bar-Natan, [On the Vassiliev Knot Invariants](https://www.math.utoronto.ca/drorbn/papers/OnVassiliev/index.html), *Topology* **34** (1995), 423–472.
 - Greg Kuperberg, [Detecting Knot Invertibility](https://arxiv.org/abs/q-alg/9712048), *Journal of Knot Theory and Its Ramifications* **5** (1996), 173–181.

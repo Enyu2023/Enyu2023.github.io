@@ -35,16 +35,19 @@ layout: academic
   </div>
   <p>Reading notes, worked examples, and longer mathematical write-ups.</p>
   {% assign recent_notes = site.notes | sort: 'date' | reverse %}
+  {% assign featured_notes = recent_notes | where: 'featured', true %}
+  {% assign other_notes = recent_notes | where_exp: 'note', 'note.featured != true' %}
+  {% assign recent_notes = featured_notes | concat: other_notes %}
   {% if recent_notes.size > 0 %}
     <ul class="entry-list">
-      {% for note in recent_notes limit: 3 %}
+      {% for note in recent_notes %}
         <li>
           <div>
             <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
             {% if note.pdf %}<a class="note-download" href="{{ note.pdf | relative_url }}" aria-label="Download {{ note.title | escape }} as PDF">[PDF]</a>{% endif %}
             {% if note.description %}<p class="muted entry-description">{{ note.description | escape }}</p>{% endif %}
           </div>
-          {% if note.date %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%b %Y' }}</time>{% endif %}
+          {% if note.date and note.date_precision != 'none' %}<time datetime="{% if note.date_precision == 'month' %}{{ note.date | date: '%Y-%m' }}{% else %}{{ note.date | date: '%Y-%m-%d' }}{% endif %}">{{ note.date | date: '%b %Y' }}</time>{% endif %}
         </li>
       {% endfor %}
     </ul>

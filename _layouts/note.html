@@ -5,7 +5,7 @@ layout: academic
   <header class="page-heading">
     <a class="back-link" href="{{ '/notes/' | relative_url }}">← All notes</a>
     <h1>{{ page.title | escape }}</h1>
-    {% if page.date %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d %B %Y' }}</time>{% endif %}
+    {% if page.date and page.date_precision != 'none' %}{% if page.date_precision == 'month' %}<time datetime="{{ page.date | date: '%Y-%m' }}">{{ page.date | date: '%B %Y' }}</time>{% else %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d %B %Y' }}</time>{% endif %}{% endif %}
     {% if page.description %}<p>{{ page.description | escape }}</p>{% endif %}
     {% if page.pdf %}<p><a href="{{ page.pdf | relative_url }}">Download PDF</a></p>{% endif %}
   </header>

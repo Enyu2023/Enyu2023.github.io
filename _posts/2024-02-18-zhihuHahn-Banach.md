@@ -34,6 +34,8 @@ Banach 的经典证明逐步扩大 $$l$$ 的定义域。另一种思路是从控
 
 ## 2. 极小次线性函数的证明
 
+这个思路与 Gerard Buskes 的综述 *The Hahn–Banach Theorem surveyed*（1993）第 5 节讨论的简短证明相对应：用 Zorn 引理选取极小的次线性控制函数，再由极小性得到线性。下面把候选集合非空、链的下界和最后的线性验证都写出来。
+
 ### 2.1. 先证明候选集合非空
 
 考虑按逐点大小排序的集合
@@ -195,9 +197,11 @@ $$
 
 这便完成了夹逼。$$\square$$
 
-## 5. 几何形式：用超平面分离凸集
+## 5. Mazur 的几何形式：用超平面分离凸集
 
 下面 $$X$$ 是实赋范空间。复赋范空间的几何分离可对其底层实空间进行。
+
+### 5.1. 从点与开凸集的分离出发
 
 **分离定理。** 设 $$C\subset X$$ 是非空开凸集，$$x_0\notin C$$。则存在非零连续线性泛函 $$f$$，使
 
@@ -246,9 +250,36 @@ $$
 
 类似地，若两个非空凸集 $$A,B$$ 不交，且 $$A$$ 是开的，对 $$A-B$$ 与零点分离，就得到 $$f(a)<f(b)$$ 对所有 $$a\in A,b\in B$$ 成立。
 
-## 6. Mazur 引理：弱收敛到范数收敛
+### 5.2. Mazur 的几何 Hahn–Banach 定理
 
-凸集分离带来一个很实用的结论。
+现在可以得到凸集与仿射子空间的分离形式，这也是 Buskes 综述第 8 节讨论的几何定理。
+
+**Mazur 的几何分离定理。** 设 $$C\subset X$$ 是凸集，且 $$\operatorname{int}C\neq\varnothing$$。设 $$V=a+Y$$ 是仿射子空间，其中 $$Y$$ 是线性子空间，且 $$V\cap\operatorname{int}C=\varnothing$$。则存在非零连续线性泛函 $$f$$ 和实数 $$\alpha$$，使
+
+$$
+f(v)=\alpha\quad(v\in V),\qquad
+f(c)<\alpha\quad(c\in\operatorname{int}C).
+$$
+
+因此闭超平面 $$H=\{x:f(x)=\alpha\}$$ 包含 $$V$$，并且不与 $$C$$ 的内部相交。
+
+**证明。** 集合 $$D=\operatorname{int}C-V$$ 是非空开凸集，且 $$0\notin D$$。应用上面的点与开凸集分离定理，得到非零连续线性泛函 $$f$$，满足
+
+$$
+f(c)<f(v)\qquad(c\in\operatorname{int}C,\ v\in V).
+$$
+
+固定一个 $$c\in\operatorname{int}C$$。对任意 $$y\in Y$$ 和 $$t\in\mathbb R$$，都有 $$a+ty\in V$$，所以
+
+$$
+f(c)<f(a)+tf(y).
+$$
+
+若 $$f(y)\neq0$$，适当令 $$t\to+\infty$$ 或 $$t\to-\infty$$ 就会矛盾。因此 $$f\vert_Y=0$$，从而 $$f$$ 在 $$V$$ 上恒等于 $$\alpha=f(a)$$。这就给出了所需的超平面。$$\square$$
+
+## 6. 应用：Mazur 引理与弱收敛
+
+另一个常以 Mazur 命名的结论涉及弱收敛序列的凸组合。它是凸集分离的应用，与上一节的几何分离定理有不同的表述和用途。
 
 **Mazur 引理。** 若 $$x_n\rightharpoonup x$$ 弱收敛，则对每个 $$N$$，可以从尾部 $$x_N,x_{N+1},\ldots$$ 中选有限个向量作凸组合 $$y_N$$，使 $$y_N\to x$$ 在范数下收敛。
 
@@ -286,6 +317,7 @@ $$
 
 ## 参考与延伸阅读
 
+- Gerard Buskes，[*The Hahn–Banach Theorem surveyed*](https://home.agh.edu.pl/~rudol/Paradoxes/Hahn_Banach%20%28Dissert.M%29.pdf)，*Dissertationes Mathematicae* 327（1993）。第 5 节讨论极小次线性函数的证明与夹逼定理，第 8 节讨论 Mazur 的几何形式；全文还比较了其他证明方法。
 - [MIT 18.102：Zorn 引理与 Hahn–Banach 定理](https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/resources/mit18_102s21_lec5/)，可对照经典的逐步延拓证明。
 - [Michael Crandall 的分析讲义，第 8 节](https://web.math.ucsb.edu/~crandall/math201b/201b.pdf)，讨论次线性函数、Mazur–Orlicz 引理和延拓定理。
 - [Stephen Simons：Hahn–Banach 定理及其应用](https://web.math.ucsb.edu/~simons/preprints/HBT.pdf)，包含更一般的夹逼形式。

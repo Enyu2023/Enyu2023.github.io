@@ -25,7 +25,9 @@ description: A short summary of the note.
 ```
 
 Write the note below the front matter. It appears automatically at `/notes/reading-note/`,
-in the Notes index, and among the three most recent homepage notes. Notes support Markdown
+in the Notes index, and on the homepage. If only the month is known, add
+`date_precision: month` to display the month and year without a day. Use
+`date_precision: none` for undated notes. Notes support Markdown
 and mathematical notation (use Kramdown's `$$...$$` inline, or on a separate line for
 display equations; write vertical bars as `\vert` so Markdown does not mistake them
 for tables). Keep using

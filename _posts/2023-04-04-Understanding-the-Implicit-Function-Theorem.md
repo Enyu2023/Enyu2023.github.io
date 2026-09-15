@@ -263,5 +263,3 @@ $$
 ## 延伸阅读
 
 Steven G. Krantz 与 Harold R. Parks 的 [*The Implicit Function Theorem: History, Theory, and Applications*](https://link.springer.com/book/10.1007/978-1-4614-5981-1) 系统讨论了隐函数定理的历史、证明、推广和应用。
-
-*整理自我的[知乎回答](https://www.zhihu.com/question/29206025/answer/2968139455)。*

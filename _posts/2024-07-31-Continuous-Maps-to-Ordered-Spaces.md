@@ -116,5 +116,3 @@ $$
 $$
 
 would be a quotient map by the theorem. For an identity map, the quotient condition forces the two topologies to agree, contradicting strict fineness. In particular, this also explains why $$\mathbb R_K$$ is not path-connected.
-
-*Adapted from my [Math Stack Exchange answer](https://math.stackexchange.com/questions/4227961/every-continuous-function-from-mathbbr-to-mathbbr-is-a-quotient-map/4952630#4952630), originally posted on 31 July 2024.*

@@ -12,10 +12,6 @@ categories: Math
 related_note: /notes/finite-type-invariants/
 ---
 
-*Adapted from [my Zhihu answer](https://www.zhihu.com/question/293415543/answer/75742755445), first published on 10 January 2025.*
-
-*The illustrations are screenshots from my [undergraduate thesis]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}).*
-
 **Previous:** [What is a finite type invariant?]({{ '/blog/math/What-Is-Finite-Type-Invariants' | relative_url }})
 
 A knot can look like a tangled piece of string. A Lie algebra, by contrast, is a vector space with a bilinear operation satisfying a few precise identities. Why should one tell us anything about the other?
@@ -103,7 +99,7 @@ Kontsevich proved this by constructing a universal invariant with values in a co
 
 ![Kontsevich's integral as a sum over pairings and ordered heights, integrating products of logarithmic differentials.]({{ '/assets/images/knots-and-lie-algebras/kontsevich-integral.png' | relative_url }})
 
-*Equation (3.42) from Section 3.2.1 of my thesis, written for a Morse tangle $$T$$ as $$I(T)$$. The knot invariant $$Z$$ is obtained after normalization.*
+*For a Morse tangle $$T$$, the expression above defines $$I(T)$$. The knot invariant $$Z$$ is obtained after normalization.*
 
 Very roughly, choose a height function on a knot, pair points lying at the same height, and attach a chord to each pair. Integrating products of logarithmic differentials over ordered heights produces diagram-valued coefficients. A suitable normalization gives the knot invariant usually denoted by $$Z$$.
 
@@ -115,7 +111,7 @@ Universality means that every finite type invariant can be recovered by a linear
 
 Chord diagrams can be enlarged to **Jacobi diagrams**. Keep the oriented skeleton, but allow the graph attached to it to have internal trivalent vertices. Its univalent vertices lie on the skeleton, and each trivalent vertex carries a cyclic ordering of its three incident half-edges. We require every connected component of the attached graph to meet the skeleton. We draw the skeleton with solid lines and the attached graph with dashed lines. The degree is half the total number of univalent and trivalent vertices of the dashed graph; for a chord diagram, this is its number of chords.
 
-![Three Jacobi diagrams from the thesis, labelled Primitive, Prime, and Not Prime.]({{ '/assets/images/knots-and-lie-algebras/jacobi-diagrams.png' | relative_url }})
+![Three Jacobi diagrams, labelled Primitive, Prime, and Not Prime.]({{ '/assets/images/knots-and-lie-algebras/jacobi-diagrams.png' | relative_url }})
 
 The key relation near the skeleton is **STU**:
 
@@ -241,7 +237,7 @@ The striking point is already visible before these deeper questions: the local i
 
 ## References
 
-- [My undergraduate thesis, Finite Type Invariants of Knots]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}), 2024. Source of the illustrations: Chapters 1–2 and equation (3.42).
+- [My undergraduate thesis, Finite Type Invariants of Knots]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}), 2024.
 - Tomotada Ohtsuki, *Quantum Invariants: A Study of Knots, 3-Manifolds, and Their Sets*, World Scientific, 2002, especially Chapter 8.
 - Dror Bar-Natan, [On the Vassiliev Knot Invariants](https://www.math.utoronto.ca/drorbn/papers/OnVassiliev/index.html), *Topology* **34** (1995), 423–472.
 - Greg Kuperberg, [Detecting Knot Invertibility](https://arxiv.org/abs/q-alg/9712048), *Journal of Knot Theory and Its Ramifications* **5** (1996), 173–181.

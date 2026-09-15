@@ -14,7 +14,7 @@ Finite type invariants are often described as **polynomials on the space of knot
 
 The answer is to take differences across crossing changes. Repeating this operation leads to singular knots, and the highest nonzero derivative forgets most of the geometry of the knot. What remains is a chord diagram. The fundamental theorem says that the linear relations between these diagrams capture exactly the leading terms of finite type invariants.
 
-This post follows Chapter 2 of my [undergraduate thesis]({{ '/notes/finite-type-invariants/' | relative_url }}) ([PDF, Chapter 2]({{ '/assets/notes/finite-type-invariants.pdf' | relative_url }}#page=17)). Throughout, knots are oriented and unframed, and invariants take values in a field $$\mathbb F$$ of characteristic zero, such as $$\mathbb Q$$.
+Throughout, knots are oriented and unframed, and invariants take values in a field $$\mathbb F$$ of characteristic zero, such as $$\mathbb Q$$.
 
 ## 1. Discrete calculus
 
@@ -184,7 +184,7 @@ A second relation comes from moving a strand past a double point. Resolve the su
 
 <figure>
   <img src="{{ '/assets/images/finite-type-invariants-4t.png' | relative_url }}" alt="Four local chord diagrams with signs plus, minus, plus, minus; their alternating sum is the four-term relation." width="830" height="210" loading="lazy">
-  <figcaption>The 4T relation: the displayed alternating sum is zero. All four diagrams agree outside these fragments. Figure from Chapter 2 of my thesis.</figcaption>
+  <figcaption>The 4T relation: the displayed alternating sum is zero. All four diagrams agree outside these fragments.</figcaption>
 </figure>
 
 Define

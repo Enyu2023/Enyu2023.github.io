@@ -38,6 +38,33 @@ for tables). Keep using
 `_posts/` for blog posts. The original blog, categories, tags, feed, and both mathematical
 labs remain available.
 
+## Add photographs
+
+The Photography page is at `/photography/`. Put web-sized copies of your photographs
+in `assets/photography/`, and list them in `_data/photography.yml` in display order.
+Replace `photos: []` with a list, following this commented example:
+
+```yaml
+intro: Milky Way, night skies, and other photographs.
+photos:
+  # - image: /assets/photography/your-photo.jpg
+  #   alt: A brief description of what appears in the photograph.
+  #   title: Your photograph's title
+  #   location: A location you want to display
+  #   date: "Month and year, if known"
+  #   width: 2400
+  #   height: 1600
+  #   featured: true
+  #   full_image: /assets/photography/your-photo-large.jpg
+```
+
+`image` and descriptive `alt` text are required. All other fields are optional;
+omit unknown dates and locations. Use the web copy's actual pixel dimensions for
+`width` and `height`; images keep their original proportions. `featured: true`
+spans the gallery's columns. Clicking a photograph opens `full_image`, or `image`
+when no larger copy is supplied. Remove embedded GPS coordinates from web copies
+if you do not want to share the precise shooting location.
+
 ## Blog style
 
 Posts should read as standalone mathematical articles. Do not add notices about

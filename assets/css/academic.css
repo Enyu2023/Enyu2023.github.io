@@ -81,6 +81,17 @@ time { color: var(--muted); white-space: nowrap; }
 .note-content th, .note-content td { padding: 8px 14px; border-bottom: 1px solid var(--rule); text-align: left; }
 .MathJax_Display { overflow-x: auto; overflow-y: hidden; }
 
+/* Photography keeps each image's original composition. */
+.photography-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 36px 28px; margin: 0 0 50px; }
+.photography-item { min-width: 0; margin: 0; }
+.photography-featured { grid-column: 1 / -1; }
+.photography-item > a { display: block; }
+.photography-item img { display: block; width: 100%; height: auto; }
+.photography-caption { margin-top: 12px; }
+.photography-caption h2 { margin: 0 0 .25rem; font-size: 1.15rem; }
+.photography-details { margin: 0; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .875rem; }
+.photography-empty { margin: 0 0 60px; color: var(--muted); }
+
 @media (max-width: 620px) {
   .site-shell { padding: 0 22px; }
   .site-header { align-items: flex-start; flex-direction: column; gap: 12px; padding: 18px 0; }
@@ -93,6 +104,7 @@ time { color: var(--muted); white-space: nowrap; }
   .entry-list time { display: block; margin-top: .2rem; }
   .research-tools a { display: inline; }
   .site-footer { padding-bottom: 24px; }
+  .photography-gallery { grid-template-columns: 1fr; gap: 30px; }
 }
 
 @media print {

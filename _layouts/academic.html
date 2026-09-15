@@ -25,6 +25,7 @@
         <a href="{{ '/#research' | relative_url }}">Research</a>
         <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes/' %} aria-current="{% if page.url == '/notes/' %}page{% else %}true{% endif %}"{% endif %}>Notes</a>
         <a href="{{ '/blog' | relative_url }}"{% if page.layout == 'blog' or page.layout == 'post' %} aria-current="{% if page.layout == 'blog' %}page{% else %}true{% endif %}"{% endif %}>Blog</a>
+        <a href="{{ '/photography/' | relative_url }}"{% if page.url == '/photography/' %} aria-current="page"{% endif %}>Photography</a>
       </nav>
     </header>
     <main id="main-content">

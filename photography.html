@@ -1,0 +1,32 @@
+---
+layout: academic
+title: Photography
+permalink: /photography/
+description: Milky Way, night skies, and other photographs.
+---
+<header class="page-heading">
+  <h1>Photography</h1>
+  {% if site.data.photography.intro and site.data.photography.intro != '' %}<p>{{ site.data.photography.intro | escape }}</p>{% endif %}
+</header>
+{% assign photos = site.data.photography.photos %}
+{% if photos.size > 0 %}
+  <div class="photography-gallery">
+    {% for photo in photos %}
+      <figure class="photography-item{% if photo.featured %} photography-featured{% endif %}">
+        <a href="{{ photo.full_image | default: photo.image | relative_url }}">
+          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}"{% if photo.width %} width="{{ photo.width | escape }}"{% endif %}{% if photo.height %} height="{{ photo.height | escape }}"{% endif %} loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
+        </a>
+        {% if photo.title or photo.location or photo.date %}
+          <figcaption class="photography-caption">
+            {% if photo.title %}<h2>{{ photo.title | escape }}</h2>{% endif %}
+            {% if photo.location or photo.date %}
+              <p class="photography-details">{% if photo.location %}<span>{{ photo.location | escape }}</span>{% endif %}{% if photo.location and photo.date %}<span aria-hidden="true"> · </span>{% endif %}{% if photo.date %}<span>{{ photo.date | escape }}</span>{% endif %}</p>
+            {% endif %}
+          </figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="photography-empty">Photographs coming soon.</p>
+{% endif %}

@@ -6,6 +6,7 @@ The homepage uses a simple academic layout. Existing blog posts and their URLs a
 
 - Change the site name in `_config.yml` (`title`).
 - Edit the introduction and research interests in `_data/profile.yml`.
+- Update the main and alternate email addresses in `_config.yml` (`email` and `personal-email`).
 - Add your photo under `assets/images/`, then set `photo` in `_data/profile.yml`
   (for example, `/assets/images/profile.jpg`). Until then, the homepage shows a photo placeholder.
 
@@ -25,7 +26,9 @@ description: A short summary of the note.
 
 Write the note below the front matter. It appears automatically at `/notes/reading-note/`,
 in the Notes index, and among the three most recent homepage notes. Notes support Markdown
-and mathematical notation (`$...$` inline or `$$...$$` on a separate line). Keep using
+and mathematical notation (use Kramdown's `$$...$$` inline, or on a separate line for
+display equations; write vertical bars as `\vert` so Markdown does not mistake them
+for tables). Keep using
 `_posts/` for blog posts. The original blog, categories, tags, feed, and both mathematical
 labs remain available.
 

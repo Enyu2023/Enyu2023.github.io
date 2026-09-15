@@ -5,7 +5,7 @@ layout: academic
 <section class="profile" id="about" aria-labelledby="intro-heading">
   <div class="profile-photo">
     {% if profile.photo and profile.photo != '' %}
-      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="210" height="250">
+      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="190" height="250">
     {% else %}
       <div class="photo-placeholder" role="img" aria-label="Space for a profile photo">
         <span>Profile photo</span>
@@ -26,11 +26,6 @@ layout: academic
 <section class="home-section" id="research" aria-labelledby="research-heading">
   <h2 id="research-heading">Research interests</h2>
   <p>{{ profile.research_interests | escape }}</p>
-  <p class="research-tools">Related explorations:
-    <a href="{{ '/kuperberg-taft/' | relative_url }}">Kuperberg–Taft Diagram Lab</a>
-    <span aria-hidden="true"> · </span>
-    <a href="{{ '/kuperberg-taft-lab/' | relative_url }}">Kuperberg Invariant Lab</a>
-  </p>
 </section>
 
 <section class="home-section" id="notes" aria-labelledby="notes-heading">
@@ -43,7 +38,14 @@ layout: academic
   {% if recent_notes.size > 0 %}
     <ul class="entry-list">
       {% for note in recent_notes limit: 3 %}
-        <li><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>{% if note.date %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%b %Y' }}</time>{% endif %}</li>
+        <li>
+          <div>
+            <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
+            {% if note.pdf %}<a class="note-download" href="{{ note.pdf | relative_url }}" aria-label="Download {{ note.title | escape }} as PDF">[PDF]</a>{% endif %}
+            {% if note.description %}<p class="muted entry-description">{{ note.description | escape }}</p>{% endif %}
+          </div>
+          {% if note.date %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%b %Y' }}</time>{% endif %}
+        </li>
       {% endfor %}
     </ul>
   {% else %}
@@ -51,9 +53,17 @@ layout: academic
   {% endif %}
 </section>
 
+<section class="home-section contact-section" id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <ul class="contact-links">
+    <li><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></li>
+    {% if site.personal-email %}<li><a href="mailto:{{ site.personal-email | escape }}">{{ site.personal-email | escape }}</a></li>{% endif %}
+  </ul>
+</section>
+
 <section class="home-section" aria-labelledby="blog-heading">
   <div class="section-heading">
-    <h2 id="blog-heading">Recent blog posts</h2>
+    <h2 id="blog-heading">From the blog</h2>
     <a href="{{ '/blog' | relative_url }}">All posts <span aria-hidden="true">→</span></a>
   </div>
   <ul class="entry-list">
@@ -64,9 +74,4 @@ layout: academic
       </li>
     {% endfor %}
   </ul>
-</section>
-
-<section class="home-section contact-section" id="contact" aria-labelledby="contact-heading">
-  <h2 id="contact-heading">Contact</h2>
-  <p><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
 </section>

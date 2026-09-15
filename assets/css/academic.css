@@ -37,7 +37,7 @@ p { margin: 0 0 1rem; }
 .site-header nav a { color: var(--muted); }
 .site-header nav a[aria-current] { color: var(--ink); text-decoration: underline; }
 .profile { display: grid; grid-template-columns: 190px minmax(0, 1fr); align-items: center; gap: 44px; padding: 52px 0 44px; }
-.profile-photo img, .photo-placeholder { display: block; width: 190px; height: 226px; object-fit: cover; }
+.profile-photo img, .photo-placeholder { display: block; width: 190px; height: 250px; object-fit: cover; object-position: center 25%; }
 .photo-placeholder { display: grid; place-items: center; border: 1px solid #d8dce0; background: #f5f6f7; color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .875rem; }
 .profile-introduction p { max-width: 34em; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 20px; padding: 0; margin: 1.1rem 0 0; list-style: none; }
@@ -49,9 +49,14 @@ p { margin: 0 0 1rem; }
 .entry-list { list-style: none; padding: 0; margin: .3rem 0 0; }
 .entry-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: .45rem 0; }
 .entry-list a { min-width: 0; }
+.entry-list li > div { min-width: 0; }
+.entry-description { margin: .25rem 0 0; }
+.note-download { font-size: .875rem; margin-left: .4rem; white-space: nowrap; }
 time { color: var(--muted); white-space: nowrap; }
 .muted { color: var(--muted); font-size: .95rem; }
 .contact-section { padding-bottom: 36px; }
+.contact-links { list-style: none; padding: 0; margin: 0; }
+.contact-links li + li { margin-top: .3rem; }
 .site-footer { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 20px; padding: 22px 0 30px; border-top: 1px solid var(--rule); color: var(--muted); }
 .site-footer nav { gap: 10px 20px; }
 .skip-link { position: absolute; top: 8px; left: -9999px; padding: 8px 14px; background: #fff; z-index: 10; }
@@ -81,7 +86,7 @@ time { color: var(--muted); white-space: nowrap; }
   .site-header { align-items: flex-start; flex-direction: column; gap: 12px; padding: 18px 0; }
   .site-header nav { gap: 10px 20px; }
   .profile { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
-  .profile-photo img, .photo-placeholder { width: 150px; height: 178px; }
+  .profile-photo img, .photo-placeholder { width: 150px; height: 198px; }
   h1 { font-size: 2rem; }
   .home-section { padding: 24px 0; }
   .entry-list li { display: block; padding: .6rem 0; }
@@ -95,3 +100,21 @@ time { color: var(--muted); white-space: nowrap; }
   .site-shell { max-width: none; padding: 0; }
   a { color: inherit; }
 }
+
+/* Blog and archive reading views. */
+.post-meta { color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .875rem; }
+.page-heading .post-meta time { display: inline; }
+.draft-label { font-style: italic; }
+.draft-note { margin: 0 0 28px; padding: 16px 20px; border-left: 3px solid var(--rule); background: #f7f8f9; font-size: .95rem; }
+.draft-note p:last-child { margin-bottom: 0; }
+.blog-search { max-width: 420px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .875rem; }
+.blog-search label { display: block; margin-bottom: 6px; color: var(--muted); }
+.blog-search input { width: 100%; padding: 10px 12px; border: 1px solid #cbd0d5; border-radius: 3px; font: inherit; background: #fff; color: var(--ink); }
+.blog-list [hidden] { display: none; }
+.archive-group { padding: 24px 0 32px; border-top: 1px solid var(--rule); }
+.post-content h1 { font-size: 1.7rem; margin-top: 1.5em; }
+.post-content { overflow-wrap: break-word; }
+.post-content .MathJax { max-width: 100%; }
+.post-comments { margin-bottom: 40px; }
+.post-figure { margin: 0 0 28px; }
+.post-figure img { display: block; max-width: 100%; max-height: 240px; width: auto; height: auto; object-fit: contain; }

@@ -64,7 +64,7 @@ spans the gallery's columns. Clicking a photograph opens `full_image`, or `image
 when no larger copy is supplied. Remove embedded GPS coordinates from web copies
 if you do not want to share the precise shooting location.
 
-The optional `quote` above the photo list has `text`, `attribution`, and `source`
+The optional `intro` accepts Markdown. The optional `quote` above the photo list has `text`, `attribution`, and `source`
 fields. Keep the attribution and source link with the quotation.
 
 ## Blog style

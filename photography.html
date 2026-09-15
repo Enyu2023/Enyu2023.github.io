@@ -6,6 +6,7 @@ description: Astrophotography by Enyu Li.
 ---
 <header class="page-heading">
   <h1>Photography</h1>
+  {% if site.data.photography.intro %}<div class="photography-introduction">{{ site.data.photography.intro | markdownify }}</div>{% endif %}
   {% assign quote = site.data.photography.quote %}
   {% if quote.text %}
     <figure class="photography-quote">

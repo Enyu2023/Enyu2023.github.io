@@ -1,0 +1,72 @@
+---
+layout: academic
+---
+{% assign profile = site.data.profile %}
+<section class="profile" id="about" aria-labelledby="intro-heading">
+  <div class="profile-photo">
+    {% if profile.photo and profile.photo != '' %}
+      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="210" height="250">
+    {% else %}
+      <div class="photo-placeholder" role="img" aria-label="Space for a profile photo">
+        <span>Profile photo</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="profile-introduction">
+    <h1 id="intro-heading">Hi, I'm {{ profile.name | escape }}.</h1>
+    <p>{{ profile.introduction | escape }}</p>
+    <ul class="inline-links" aria-label="Profile links">
+      <li><a href="mailto:{{ site.email | escape }}">Email</a></li>
+      <li><a href="https://github.com/{{ site.github_username | strip | escape }}">GitHub</a></li>
+      {% if site.zhihu_username %}<li><a href="https://www.zhihu.com/people/{{ site.zhihu_username | escape }}">Zhihu</a></li>{% endif %}
+    </ul>
+  </div>
+</section>
+
+<section class="home-section" id="research" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research interests</h2>
+  <p>{{ profile.research_interests | escape }}</p>
+  <p class="research-tools">Related explorations:
+    <a href="{{ '/kuperberg-taft/' | relative_url }}">Kuperberg–Taft Diagram Lab</a>
+    <span aria-hidden="true"> · </span>
+    <a href="{{ '/kuperberg-taft-lab/' | relative_url }}">Kuperberg Invariant Lab</a>
+  </p>
+</section>
+
+<section class="home-section" id="notes" aria-labelledby="notes-heading">
+  <div class="section-heading">
+    <h2 id="notes-heading">Notes</h2>
+    <a href="{{ '/notes/' | relative_url }}">All notes <span aria-hidden="true">→</span></a>
+  </div>
+  <p>Reading notes, worked examples, and longer mathematical write-ups.</p>
+  {% assign recent_notes = site.notes | sort: 'date' | reverse %}
+  {% if recent_notes.size > 0 %}
+    <ul class="entry-list">
+      {% for note in recent_notes limit: 3 %}
+        <li><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>{% if note.date %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%b %Y' }}</time>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">Notes will be added here as they are ready.</p>
+  {% endif %}
+</section>
+
+<section class="home-section" aria-labelledby="blog-heading">
+  <div class="section-heading">
+    <h2 id="blog-heading">Recent blog posts</h2>
+    <a href="{{ '/blog' | relative_url }}">All posts <span aria-hidden="true">→</span></a>
+  </div>
+  <ul class="entry-list">
+    {% for post in site.posts limit: 3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d %b %Y' }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="home-section contact-section" id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <p><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
+</section>

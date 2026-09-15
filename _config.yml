@@ -6,9 +6,9 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: Ley Space 
+title: Enyu Li
 # Description of the Site
-description: Welcome To My Homepage!
+description: Enyu Li's research interests and notes in low-dimensional topology.
 # URL of Image of the Site
 site-image: /assets/images/me.jpg
 # Keywords of the Site
@@ -62,6 +62,12 @@ plugins:
 # Permalink
 permalink: "blog/:categories/:title"
 
+# Notes are independent of the existing blog posts.
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+
 # Compress
 compress_html:
   clippings: all
@@ -69,6 +75,11 @@ compress_html:
 
 # Defaults
 defaults:
+  -
+    scope:
+      type: 'notes'
+    values:
+      layout: note
   -
     scope:
       type: 'posts'

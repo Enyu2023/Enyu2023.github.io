@@ -1,0 +1,28 @@
+---
+layout: academic
+title: Notes
+permalink: /notes/
+description: Reading notes and mathematical write-ups by Enyu Li.
+---
+<header class="page-heading">
+  <h1>Notes</h1>
+  <p>Reading notes, worked examples, and longer mathematical write-ups.</p>
+</header>
+{% assign notes = site.notes | sort: 'date' | reverse %}
+{% if notes.size > 0 %}
+  <ul class="notes-list">
+    {% for note in notes %}
+      <li>
+        <h2><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a></h2>
+        {% if note.date %}<time datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: '%d %B %Y' }}</time>{% endif %}
+        {% if note.description %}<p>{{ note.description | escape }}</p>{% endif %}
+        {% if note.pdf %}<a class="pdf-link" href="{{ note.pdf | relative_url }}">Download PDF</a>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="empty-notes">
+    <h2>A place for longer notes</h2>
+    <p>New notes will appear here as they are ready. In the meantime, my existing mathematical writing is available on the <a href="{{ '/blog' | relative_url }}">blog</a>.</p>
+  </div>
+{% endif %}

@@ -1,4 +1,37 @@
-# WhatATheme
+# Enyu Li's academic homepage
+
+The homepage uses a simple academic layout. Existing blog posts and their URLs are preserved.
+
+## Edit the profile
+
+- Change the site name in `_config.yml` (`title`).
+- Edit the introduction and research interests in `_data/profile.yml`.
+- Add your photo under `assets/images/`, then set `photo` in `_data/profile.yml`
+  (for example, `/assets/images/profile.jpg`). Until then, the homepage shows a photo placeholder.
+
+## Add a note
+
+Create a Markdown file such as `_notes/reading-note.md` with this front matter:
+
+```yaml
+---
+title: A reading note
+date: 2026-09-15
+description: A short summary of the note.
+# Optional: add a PDF under assets/notes/ and link it here.
+# pdf: /assets/notes/reading-note.pdf
+---
+```
+
+Write the note below the front matter. It appears automatically at `/notes/reading-note/`,
+in the Notes index, and among the three most recent homepage notes. Notes support Markdown
+and mathematical notation (`$...$` inline or `$$...$$` on a separate line). Keep using
+`_posts/` for blog posts. The original blog, categories, tags, feed, and both mathematical
+labs remain available.
+
+---
+
+# Original theme: WhatATheme
 **WhatATheme** is a customizable Jekyll Portfolio theme which supports blogging. You can use this theme in order to create an elegant, fully responsive portfolio.
 
 #### You can checkout the [**Demo Here**](https://thedevslot.github.io/WhatATheme/) :boom:

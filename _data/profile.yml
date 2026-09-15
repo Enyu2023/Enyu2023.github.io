@@ -1,0 +1,11 @@
+# Edit the introduction and research interests here.
+name: Enyu
+introduction: >-
+  Welcome to my homepage. I use this space to share my mathematical
+  writing, notes, and research explorations.
+# Add a photo to assets/images/ and set its path below when ready.
+photo:
+photo_alt: Photo of Enyu
+research_interests: >-
+  I'm interested in low-dimensional topology, particularly finite type invariants
+  and quantum invariants of knots and 3-manifolds.

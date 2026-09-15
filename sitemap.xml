@@ -1,0 +1,30 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for item in site.pages %}
+    {% if item.layout == 'home' or item.layout == 'academic' or item.layout == 'blog' %}
+      {% unless item.sitemap == false %}
+  <url><loc>{{ item.url | replace: '/index.html', '/' | remove: '.html' | absolute_url | xml_escape }}</loc></url>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% for item in site.posts %}
+    {% unless item.sitemap == false %}
+  <url><loc>{{ item.url | replace: '/index.html', '/' | remove: '.html' | absolute_url | xml_escape }}</loc></url>
+    {% endunless %}
+  {% endfor %}
+  {% for item in site.notes %}
+    {% unless item.sitemap == false %}
+  <url><loc>{{ item.url | replace: '/index.html', '/' | remove: '.html' | absolute_url | xml_escape }}</loc></url>
+    {% endunless %}
+  {% endfor %}
+  {% assign note_pdfs = site.notes | where_exp: 'note', 'note.sitemap != false' | map: 'pdf' | compact | uniq %}
+  {% for pdf in note_pdfs %}
+    {% unless pdf == '' %}
+  <url><loc>{{ pdf | absolute_url | xml_escape }}</loc></url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

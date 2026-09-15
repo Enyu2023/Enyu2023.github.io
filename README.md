@@ -44,6 +44,16 @@ Posts should read as standalone mathematical articles. Do not add notices about
 adaptation from other platforms, screenshot sources, or correspondence to thesis
 chapters. Preserve original publication dates in the post metadata.
 
+## Search engines
+
+Keep `url` in `_config.yml` set to the public site address. Academic pages include
+an absolute canonical URL. `/sitemap.xml` automatically lists the homepage,
+academic indexes, blog posts, notes, and linked note PDFs; `/robots.txt` points
+search engines to it. New posts and notes appear in the sitemap on the next build.
+Set `sitemap: false` in a page or note's front matter to omit it from the sitemap
+(this does not prevent indexing). Submit `/sitemap.xml` in Google Search Console
+after verifying ownership of the site.
+
 ---
 
 # Original theme: WhatATheme

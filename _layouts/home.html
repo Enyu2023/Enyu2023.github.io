@@ -36,7 +36,7 @@ layout: academic
     <h2 id="notes-heading">Notes</h2>
     <a href="{{ '/notes/' | relative_url }}">All notes <span aria-hidden="true">→</span></a>
   </div>
-  <p>Notes from my studies in mathematics.</p>
+  <p>Notes and surveys from my studies in mathematics.</p>
   {% assign recent_notes = site.notes | sort: 'date' | reverse %}
   {% assign featured_notes = recent_notes | where: 'featured', true %}
   {% assign other_notes = recent_notes | where_exp: 'note', 'note.featured != true' %}

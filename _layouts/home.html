@@ -5,7 +5,7 @@ layout: academic
 <section class="profile" id="about" aria-labelledby="intro-heading">
   <div class="profile-photo">
     {% if profile.photo and profile.photo != '' %}
-      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="240" height="427">
+      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="240" height="320">
     {% else %}
       <div class="photo-placeholder" role="img" aria-label="Space for a profile photo">
         <span>Profile photo</span>

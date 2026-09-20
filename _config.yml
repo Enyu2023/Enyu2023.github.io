@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # Description of the Site
 description: Enyu Li's research interests and notes in low-dimensional topology.
 # URL of Image of the Site
-site-image: /assets/images/enyu-li-portrait.jpg
+site-image: /assets/images/enyu-li-evening.jpg
 # Keywords of the Site
 site-keywords: enyu, enyu li, math
 # URL for the Image of custom Favicon
@@ -49,7 +49,7 @@ disqus-shortname: Ley
 # Name of the Author
 author-name: Enyu Li
 # URL for the Image of the Author
-author-image: /assets/images/enyu-li-portrait.jpg
+author-image: /assets/images/enyu-li-evening.jpg
 # 60 Words About the Author
 author-about: I'm a graduate student at Tsinghua University. I obtained my bachelor's degree in mathematics from Beijing Normal University in 2024.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)

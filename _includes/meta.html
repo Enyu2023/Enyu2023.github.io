@@ -32,6 +32,7 @@
 <meta itemprop="description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
 <meta itemprop="image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
 
+{% if site.google-analytics and site.google-analytics != "" %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google-analytics}}"></script>
 <script>
@@ -44,3 +45,7 @@
 
     gtag('config', '{{site.google-analytics}}');
 </script>
+{% endif %}
+
+<!-- GoatCounter (private visitor counter; enabled by `goatcounter:` in _config.yml) -->
+{% include goatcounter.html %}

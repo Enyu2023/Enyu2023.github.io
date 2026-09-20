@@ -1,0 +1,11 @@
+{% comment %}
+  Private visitor counter (GoatCounter, https://www.goatcounter.com).
+  Enabled only when `goatcounter:` in _config.yml is set to your site code
+  (the part before ".goatcounter.com"). The numbers are never shown on the
+  site itself; view them by logging in at https://<code>.goatcounter.com.
+  Visits from localhost are ignored automatically, so `jekyll serve` is safe.
+{% endcomment %}
+{% if site.goatcounter and site.goatcounter != "" %}
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<noscript><img src="https://{{ site.goatcounter }}.goatcounter.com/count?p={{ page.url | uri_escape }}" alt="" width="1" height="1"></noscript>
+{% endif %}

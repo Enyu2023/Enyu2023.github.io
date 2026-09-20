@@ -40,8 +40,14 @@ spotify_username:
 zhihu_username:
 math_stackexchange_url: https://math.stackexchange.com/users/1208513/eric
 
-# Google Analytics
+# Google Analytics (leave empty to disable)
 google-analytics: 
+
+# GoatCounter — private visitor counter (https://www.goatcounter.com).
+# Your GoatCounter site code, i.e. the part before ".goatcounter.com".
+# Nothing is shown on the site; log in at https://<code>.goatcounter.com to see the numbers.
+# Leave empty to disable.
+goatcounter: enyu2023
 
 # Disqus
 disqus-shortname: Ley

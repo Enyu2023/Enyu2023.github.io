@@ -27,8 +27,23 @@ layout: academic
 </section>
 
 <section class="home-section" id="research" aria-labelledby="research-heading">
-  <h2 id="research-heading">Research interests</h2>
+  <h2 id="research-heading">Research</h2>
   <p>{{ profile.research_interests | escape }}</p>
+  {% if site.data.research.size > 0 %}
+    <h3>Papers and preprints</h3>
+    <ul class="entry-list">
+      {% for paper in site.data.research %}
+        <li>
+          <div>
+            <a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>
+            {% if paper.pdf %}<a class="note-download" href="{{ paper.pdf | escape }}" aria-label="Read {{ paper.title | escape }} as PDF">[PDF]</a>{% endif %}
+            <p class="muted entry-description">{{ paper.authors | escape }}. {{ paper.status | escape }}, arXiv:{{ paper.arxiv | escape }}.</p>
+          </div>
+          <time datetime="{{ paper.submitted | date: '%Y-%m-%d' }}">Submitted {{ paper.submitted | date: '%-d %b %Y' }}</time>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </section>
 
 <section class="home-section" id="notes" aria-labelledby="notes-heading">

@@ -5,3 +5,10 @@
   submitted: "2026-10-04"
   url: https://arxiv.org/abs/2610.05177
   pdf: https://arxiv.org/pdf/2610.05177
+- title: Finite Type Invariants of Knots
+  authors: Enyu Li
+  status: Undergraduate thesis
+  institution: Beijing Normal University
+  year: 2024
+  url: /notes/finite-type-invariants/
+  pdf: /assets/notes/finite-type-invariants.pdf

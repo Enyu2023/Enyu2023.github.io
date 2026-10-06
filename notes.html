@@ -8,7 +8,7 @@ description: Notes and surveys from my studies in mathematics.
   <h1>Notes</h1>
   <p>Notes and surveys from my studies in mathematics.</p>
 </header>
-{% assign notes = site.notes | sort: 'date' | reverse %}
+{% assign notes = site.notes | where_exp: 'note', 'note.research_work != true' | sort: 'date' | reverse %}
 {% assign featured_notes = notes | where: 'featured', true %}
 {% assign other_notes = notes | where_exp: 'note', 'note.featured != true' %}
 {% assign notes = featured_notes | concat: other_notes %}

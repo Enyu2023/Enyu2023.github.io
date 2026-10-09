@@ -1,5 +1,0 @@
-<li data-search="{{ post.title | append: ' ' | append: post.content | append: ' ' | append: post.tags | strip_html | strip_newlines | downcase | escape }}">
-  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-  <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% if post.status == 'unfinished' %} · <span class="draft-label">{% if post.lang == 'zh-CN' %}未完稿{% else %}Unfinished draft{% endif %}</span>{% endif %}</p>
-  {% if post.description and post.description != '' %}<p class="muted">{{ post.description | escape }}</p>{% endif %}
-</li>

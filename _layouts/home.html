@@ -1,0 +1,95 @@
+---
+layout: academic
+---
+{% assign profile = site.data.profile %}
+<section class="profile" id="about" aria-labelledby="intro-heading">
+  <div class="profile-photo">
+    {% if profile.photo and profile.photo != '' %}
+      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.photo_alt | escape }}" width="240" height="320">
+    {% else %}
+      <div class="photo-placeholder" role="img" aria-label="Space for a profile photo">
+        <span>Profile photo</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="profile-introduction">
+    <h1 id="intro-heading">Hi, I'm {{ profile.name | escape }}.</h1>
+    <p>{{ profile.introduction | escape }}</p>
+    <ul class="contact-links" id="contact" aria-label="Email addresses">
+      <li><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></li>
+      {% if site.personal-email %}<li><a href="mailto:{{ site.personal-email | escape }}">{{ site.personal-email | escape }}</a></li>{% endif %}
+    </ul>
+    <ul class="inline-links" aria-label="Profile links">
+      {% if site.math_stackexchange_url %}<li><a href="{{ site.math_stackexchange_url | escape }}">Math Stack Exchange</a></li>{% endif %}
+      {% if site.zhihu_username %}<li><a href="https://www.zhihu.com/people/{{ site.zhihu_username | escape }}">Zhihu</a></li>{% endif %}
+    </ul>
+  </div>
+</section>
+
+<section class="home-section" id="research" aria-labelledby="research-heading">
+  <h2 id="research-heading">Research</h2>
+  <p>{{ profile.research_interests | escape }}</p>
+  {% if site.data.research.size > 0 %}
+    <h3>Papers and preprints</h3>
+    <ul class="entry-list">
+      {% for paper in site.data.research %}
+        {% assign paper_url = paper.url %}
+        {% unless paper_url contains '://' %}{% assign paper_url = paper_url | relative_url %}{% endunless %}
+        {% assign paper_pdf = paper.pdf %}
+        {% unless paper_pdf contains '://' %}{% assign paper_pdf = paper_pdf | relative_url %}{% endunless %}
+        <li>
+          <div>
+            <a href="{{ paper_url | escape }}">{{ paper.title | escape }}</a>
+            {% if paper.pdf %}<a class="note-download" href="{{ paper_pdf | escape }}" aria-label="Read {{ paper.title | escape }} as PDF">[PDF]</a>{% endif %}
+            <p class="muted entry-description">{{ paper.authors | escape }}. {{ paper.status | escape }}{% if paper.institution %}, {{ paper.institution | escape }}{% endif %}{% if paper.arxiv %}, arXiv:{{ paper.arxiv | escape }}{% endif %}.</p>
+          </div>
+          {% if paper.submitted %}<time datetime="{{ paper.submitted | date: '%Y-%m-%d' }}">Submitted {{ paper.submitted | date: '%-d %b %Y' }}</time>{% elsif paper.year %}<time datetime="{{ paper.year | escape }}">{{ paper.year | escape }}</time>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
+
+<section class="home-section" id="notes" aria-labelledby="notes-heading">
+  <div class="section-heading">
+    <h2 id="notes-heading">Notes</h2>
+    <a href="{{ '/notes/' | relative_url }}">All notes <span aria-hidden="true">→</span></a>
+  </div>
+  <p>Notes and surveys from my studies in mathematics.</p>
+  {% assign recent_notes = site.notes | where_exp: 'note', 'note.research_work != true' | sort: 'date' | reverse %}
+  {% assign featured_notes = recent_notes | where: 'featured', true %}
+  {% assign other_notes = recent_notes | where_exp: 'note', 'note.featured != true' %}
+  {% assign recent_notes = featured_notes | concat: other_notes %}
+  {% if recent_notes.size > 0 %}
+    <ul class="entry-list">
+      {% for note in recent_notes %}
+        <li>
+          <div>
+            <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
+            {% if note.pdf %}<a class="note-download" href="{{ note.pdf | relative_url }}" aria-label="Download {{ note.title | escape }} as PDF">[PDF]</a>{% endif %}
+            {% if note.description %}<p class="muted entry-description">{{ note.description | escape }}</p>{% endif %}
+            {% if note.abstract and note.abstract != '' %}<div class="note-abstract">{{ note.abstract | markdownify }}</div>{% endif %}
+          </div>
+          {% if note.date and note.date_precision != 'none' %}<time datetime="{% if note.date_precision == 'month' %}{{ note.date | date: '%Y-%m' }}{% else %}{{ note.date | date: '%Y-%m-%d' }}{% endif %}">{{ note.date | date: '%b %Y' }}</time>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">Notes will be added here as they are ready.</p>
+  {% endif %}
+</section>
+
+<section class="home-section" aria-labelledby="blog-heading">
+  <div class="section-heading">
+    <h2 id="blog-heading">From the blog</h2>
+    <a href="{{ '/blog' | relative_url }}">All posts <span aria-hidden="true">→</span></a>
+  </div>
+  <ul class="entry-list">
+    {% for post in site.posts limit: 3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d %b %Y' }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

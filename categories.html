@@ -1,0 +1,19 @@
+---
+layout: academic
+title: Categories
+---
+<header class="page-heading">
+  <h1>Categories</h1>
+  <ul class="inline-links">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}<li><a href="#{{ category[0] | slugify }}">{{ category[0] | escape }} ({{ category[1] | size }})</a></li>{% endfor %}
+  </ul>
+</header>
+{% for category in categories %}
+<section class="archive-group" aria-labelledby="{{ category[0] | slugify }}">
+  <h2 id="{{ category[0] | slugify }}">{{ category[0] | escape }}</h2>
+  <ul class="entry-list">
+    {% for post in category[1] %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time></li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}

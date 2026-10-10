@@ -1,0 +1,55 @@
+---
+layout: academic
+title: Photography
+permalink: /photography/
+description: Astrophotography by Enyu Li.
+---
+<header class="page-heading">
+  <h1>Photography</h1>
+  {% if site.data.photography.intro %}<blockquote class="photography-introduction">{{ site.data.photography.intro | markdownify }}</blockquote>{% endif %}
+  {% assign quote = site.data.photography.quote %}
+  {% if quote.text %}
+    <figure class="photography-quote">
+      <blockquote cite="{{ quote.source | escape }}"><p>“{{ quote.text | escape }}”</p></blockquote>
+      <figcaption>— <a href="{{ quote.source | escape }}">{{ quote.attribution | escape }}</a></figcaption>
+    </figure>
+  {% endif %}
+</header>
+{% assign photos = site.data.photography.photos %}
+{% if photos.size > 0 %}
+  <div class="photography-gallery">
+    {% for photo in photos %}
+      <figure class="photography-item{% if photo.featured %} photography-featured{% endif %}">
+        <a href="{{ photo.full_image | default: photo.image | relative_url }}">
+          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}"{% if photo.width %} width="{{ photo.width | escape }}"{% endif %}{% if photo.height %} height="{{ photo.height | escape }}"{% endif %} loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
+        </a>
+        {% if photo.title or photo.location or photo.date %}
+          <figcaption class="photography-caption">
+            {% if photo.title %}<h2>{{ photo.title | escape }}</h2>{% endif %}
+            {% if photo.location or photo.date %}
+              <p class="photography-details">{% if photo.location %}<span>{{ photo.location | escape }}</span>{% endif %}{% if photo.location and photo.date %}<span aria-hidden="true"> · </span>{% endif %}{% if photo.date %}<span>{{ photo.date | escape }}</span>{% endif %}</p>
+            {% endif %}
+          </figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="photography-empty">Photographs coming soon.</p>
+{% endif %}
+{% assign lunar_eclipse = site.data.lunar_eclipse %}
+{% if lunar_eclipse.photos.size > 0 %}
+  <figure class="lunar-eclipse-series">
+    <div class="lunar-eclipse-grid">
+      {% for photo in lunar_eclipse.photos %}
+        <a href="{{ photo.image | relative_url }}" aria-label="View lunar eclipse photograph {{ forloop.index }}">
+          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+        </a>
+      {% endfor %}
+    </div>
+    <figcaption class="photography-caption">
+      <h2>{{ lunar_eclipse.title | escape }}</h2>
+      {% if lunar_eclipse.date %}<p class="photography-details">{{ lunar_eclipse.date | escape }}</p>{% endif %}
+    </figcaption>
+  </figure>
+{% endif %}

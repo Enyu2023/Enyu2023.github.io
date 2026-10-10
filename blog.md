@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Other stuff
 layout: blog
 ---
 

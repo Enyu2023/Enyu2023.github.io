@@ -1,7 +1,6 @@
 ---
 title: "Knots and Lie Algebras: Why Are They Related?"
 layout: post
-published: false
 date: 2025-01-10 04:58:00 +0800
 permalink: /blog/math/Knots-and-Lie-Algebras
 description: "How crossing changes lead to chord diagrams, and why their relations are the identities of Lie algebras."
@@ -12,8 +11,6 @@ tags:
 categories: Math
 related_note: /notes/finite-type-invariants/
 ---
-
-**Previous:** [What is a finite type invariant?]({{ '/blog/math/What-Is-Finite-Type-Invariants' | relative_url }})
 
 A knot can look like a tangled piece of string. A Lie algebra, by contrast, is a vector space with a bilinear operation satisfying a few precise identities. Why should one tell us anything about the other?
 
@@ -242,4 +239,4 @@ The striking point is already visible before these deeper questions: the local i
 - Dror Bar-Natan, [On the Vassiliev Knot Invariants](https://www.math.utoronto.ca/drorbn/papers/OnVassiliev/index.html), *Topology* **34** (1995), 423–472.
 - Greg Kuperberg, [Detecting Knot Invertibility](https://arxiv.org/abs/q-alg/9712048), *Journal of Knot Theory and Its Ramifications* **5** (1996), 173–181.
 
-**Previous:** [What is a finite type invariant?]({{ '/blog/math/What-Is-Finite-Type-Invariants' | relative_url }}) · **Further notes:** [Finite Type Invariants]({{ '/notes/finite-type-invariants/' | relative_url }})
+**Further notes:** [Finite Type Invariants]({{ '/notes/finite-type-invariants/' | relative_url }})

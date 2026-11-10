@@ -315,7 +315,7 @@ $$
 
 的范数却是 $$N^{-1/2}$$。凸组合正是把弱收敛转化为强收敛的关键。
 
-## 参考与延伸阅读
+## Reference
 
 - Gerard Buskes，[*The Hahn–Banach Theorem surveyed*](https://home.agh.edu.pl/~rudol/Paradoxes/Hahn_Banach%20%28Dissert.M%29.pdf)，*Dissertationes Mathematicae* 327（1993）。第 5 节讨论极小次线性函数的证明与夹逼定理，第 8 节讨论 Mazur 的几何形式；全文还比较了其他证明方法。
 - [MIT 18.102：Zorn 引理与 Hahn–Banach 定理](https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/resources/mit18_102s21_lec5/)，可对照经典的逐步延拓证明。

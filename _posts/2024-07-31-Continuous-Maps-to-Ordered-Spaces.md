@@ -1,7 +1,6 @@
 ---
 title: Quotient Maps from Path-Connected Spaces
 layout: post
-published: false
 date: 2024-07-31
 permalink: /blog/math/Continuous-Maps-to-Ordered-Spaces
 description: A compact-path proof that continuous maps from path-connected spaces to linearly ordered spaces are quotient maps onto their images.

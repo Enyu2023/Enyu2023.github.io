@@ -1,6 +1,7 @@
 ---
 title: What is a finite type invariant?
 layout: post
+published: false
 post-image: /assets/images/ThreeFoldKnot.jpg
 description: From crossing changes and discrete derivatives to chord diagrams, weight systems, and the fundamental theorem of finite type invariants.
 tags:

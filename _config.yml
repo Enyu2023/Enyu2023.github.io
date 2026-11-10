@@ -38,7 +38,7 @@ behance_username:
 dribbble_username: 
 spotify_username: 
 zhihu_username:
-math_stackexchange_url: https://math.stackexchange.com/users/1208513/eric
+math_stackexchange_url:
 
 # Google Analytics (leave empty to disable)
 google-analytics: 

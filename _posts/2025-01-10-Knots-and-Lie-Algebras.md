@@ -1,6 +1,7 @@
 ---
 title: "Knots and Lie Algebras: Why Are They Related?"
 layout: post
+published: false
 date: 2025-01-10 04:58:00 +0800
 permalink: /blog/math/Knots-and-Lie-Algebras
 description: "How crossing changes lead to chord diagrams, and why their relations are the identities of Lie algebras."

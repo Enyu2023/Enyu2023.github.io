@@ -1,6 +1,7 @@
 ---
 title: A Clever Proof of Sylow Theorems
 layout: post
+published: false
 post-image: /assets/images/Snake.svg.png
 description: "A proof of Sylow's theorems through group actions, permutation representations, and upper unitriangular matrices."
 tags:
